@@ -93,7 +93,7 @@ namespace Server
         {
             base.OnClosing(e);
 
-            if (XtraMessageBox.Show(this, "Are you sure you want to close the server?", "Close Server", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            if (XtraMessageBox.Show(this, "你确定要关闭服务器吗?", "关闭服务器", MessageBoxButtons.YesNo) != DialogResult.Yes)
             {
                 e.Cancel = true;
                 return;
@@ -147,55 +147,55 @@ namespace Server
             StartServerButton.Enabled = SEnvir.EnvirThread == null;
             StopServerButton.Enabled = SEnvir.Started;
 
-            ConnectionLabel.Caption = string.Format(@"Connections: {0:#,##0}", SEnvir.Connections.Count);
-            ObjectLabel.Caption = string.Format(@"Objects: {0} of {1:#,##0}", SEnvir.ActiveObjects.Count, SEnvir.Objects.Count);
-            ProcessLabel.Caption = string.Format(@"Process Count: {0:#,##0}", SEnvir.ProcessObjectCount);
-            LoopLabel.Caption = string.Format(@"Loop Count: {0:#,##0}", SEnvir.LoopCount);
-            EMailsSentLabel.Caption = string.Format(@"E-Mails Sent: {0:#,##0}", EmailService.EMailsSent);
+            ConnectionLabel.Caption = string.Format(@"链接: {0:#,##0}", SEnvir.Connections.Count);
+            ObjectLabel.Caption = string.Format(@"物体: {0}/{1:#,##0}", SEnvir.ActiveObjects.Count, SEnvir.Objects.Count);
+            ProcessLabel.Caption = string.Format(@"进程数量: {0:#,##0}", SEnvir.ProcessObjectCount);
+            LoopLabel.Caption = string.Format(@"循环计数: {0:#,##0}", SEnvir.LoopCount);
+            EMailsSentLabel.Caption = string.Format(@"E-Mails发送: {0:#,##0}", EmailService.EMailsSent);
 
             ConDelay.Caption = string.Format(@"Con Delay: {0:#,##0}ms", SEnvir.ConDelay);
-            SaveDelay.Caption = string.Format(@"Save Delay: {0:#,##0}ms", SEnvir.SaveDelay);
+            SaveDelay.Caption = string.Format(@"保存延迟: {0:#,##0}ms", SEnvir.SaveDelay);
 
             const decimal KB = 1024;
             const decimal MB = KB * 1024;
             const decimal GB = MB * 1024;
 
             if (SEnvir.TotalBytesReceived > GB)
-                TotalDownloadLabel.Caption = string.Format(@"Downloaded: {0:#,##0.0}GB", SEnvir.TotalBytesReceived / GB);
+                TotalDownloadLabel.Caption = string.Format(@"下载: {0:#,##0.0}GB", SEnvir.TotalBytesReceived / GB);
             else if (SEnvir.TotalBytesReceived > MB)
-                TotalDownloadLabel.Caption = string.Format(@"Downloaded: {0:#,##0.0}MB", SEnvir.TotalBytesReceived / MB);
+                TotalDownloadLabel.Caption = string.Format(@"下载: {0:#,##0.0}MB", SEnvir.TotalBytesReceived / MB);
             else if (SEnvir.TotalBytesReceived > KB)
-                TotalDownloadLabel.Caption = string.Format(@"Downloaded: {0:#,##0}KB", SEnvir.TotalBytesReceived / KB);
+                TotalDownloadLabel.Caption = string.Format(@"下载: {0:#,##0}KB", SEnvir.TotalBytesReceived / KB);
             else
-                TotalDownloadLabel.Caption = string.Format(@"Downloaded: {0:#,##0}B", SEnvir.TotalBytesReceived);
+                TotalDownloadLabel.Caption = string.Format(@"下载: {0:#,##0}B", SEnvir.TotalBytesReceived);
 
             if (SEnvir.TotalBytesSent > GB)
-                TotalUploadLabel.Caption = string.Format(@"Uploaded: {0:#,##0.0}GB", SEnvir.TotalBytesSent / GB);
+                TotalUploadLabel.Caption = string.Format(@"上传: {0:#,##0.0}GB", SEnvir.TotalBytesSent / GB);
             else if (SEnvir.TotalBytesSent > MB)
-                TotalUploadLabel.Caption = string.Format(@"Uploaded: {0:#,##0.0}MB", SEnvir.TotalBytesSent / MB);
+                TotalUploadLabel.Caption = string.Format(@"上传: {0:#,##0.0}MB", SEnvir.TotalBytesSent / MB);
             else if (SEnvir.TotalBytesSent > KB)
-                TotalUploadLabel.Caption = string.Format(@"Uploaded: {0:#,##0}KB", SEnvir.TotalBytesSent / KB);
+                TotalUploadLabel.Caption = string.Format(@"上传: {0:#,##0}KB", SEnvir.TotalBytesSent / KB);
             else
-                TotalUploadLabel.Caption = string.Format(@"Uploaded: {0:#,##0}B", SEnvir.TotalBytesSent);
+                TotalUploadLabel.Caption = string.Format(@"上传: {0:#,##0}B", SEnvir.TotalBytesSent);
 
 
             if (SEnvir.DownloadSpeed > GB)
-                DownloadSpeedLabel.Caption = string.Format(@"D/L Speed: {0:#,##0.0}GBps", SEnvir.DownloadSpeed / GB);
+                DownloadSpeedLabel.Caption = string.Format(@"下载速度: {0:#,##0.0}GBps", SEnvir.DownloadSpeed / GB);
             else if (SEnvir.DownloadSpeed > MB)
-                DownloadSpeedLabel.Caption = string.Format(@"D/L Speed: {0:#,##0.0}MBps", SEnvir.DownloadSpeed / MB);
+                DownloadSpeedLabel.Caption = string.Format(@"下载速度: {0:#,##0.0}MBps", SEnvir.DownloadSpeed / MB);
             else if (SEnvir.DownloadSpeed > KB)
-                DownloadSpeedLabel.Caption = string.Format(@"D/L Speed: {0:#,##0}KBps", SEnvir.DownloadSpeed / KB);
+                DownloadSpeedLabel.Caption = string.Format(@"下载速度: {0:#,##0}KBps", SEnvir.DownloadSpeed / KB);
             else
-                DownloadSpeedLabel.Caption = string.Format(@"D/L Speed: {0:#,##0}Bps", SEnvir.DownloadSpeed);
+                DownloadSpeedLabel.Caption = string.Format(@"下载速度: {0:#,##0}Bps", SEnvir.DownloadSpeed);
 
             if (SEnvir.UploadSpeed > GB)
-                UploadSpeedLabel.Caption = string.Format(@"U/L Speed: {0:#,##0.0}GBps", SEnvir.UploadSpeed / GB);
+                UploadSpeedLabel.Caption = string.Format(@"上传速度: {0:#,##0.0}GBps", SEnvir.UploadSpeed / GB);
             else if (SEnvir.UploadSpeed > MB)
-                UploadSpeedLabel.Caption = string.Format(@"U/L Speed: {0:#,##0.0}MBps", SEnvir.UploadSpeed / MB);
+                UploadSpeedLabel.Caption = string.Format(@"上传速度: {0:#,##0.0}MBps", SEnvir.UploadSpeed / MB);
             else if (SEnvir.UploadSpeed > KB)
-                UploadSpeedLabel.Caption = string.Format(@"U/L Speed: {0:#,##0}KBps", SEnvir.UploadSpeed / KB);
+                UploadSpeedLabel.Caption = string.Format(@"上传速度: {0:#,##0}KBps", SEnvir.UploadSpeed / KB);
             else
-                UploadSpeedLabel.Caption = string.Format(@"U/L Speed: {0:#,##0}Bps", SEnvir.UploadSpeed);
+                UploadSpeedLabel.Caption = string.Format(@"上传速度: {0:#,##0}Bps", SEnvir.UploadSpeed);
         }
 
         private void StartServerButton_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -259,7 +259,7 @@ namespace Server
         {
             if (e.KeyCode != Keys.Delete) return;
 
-            if (MessageBox.Show("Delete rows?", "Confirmation", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            if (MessageBox.Show("删除行?", "确定", MessageBoxButtons.YesNo) != DialogResult.Yes)
                 return;
 
             GridView view = (GridView)sender;
@@ -333,7 +333,7 @@ namespace Server
 
                     if (cells.Length != row.Length)
                     {
-                        XtraMessageBox.Show("Column Count does not Copied Column Count");
+                        XtraMessageBox.Show("列计数不复制列计数");
                         return;
                     }
 
