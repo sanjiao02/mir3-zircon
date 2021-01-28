@@ -87,14 +87,14 @@
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(972, 144);
+            this.ribbon.Size = new System.Drawing.Size(1134, 148);
             // 
             // SaveButton
             // 
-            this.SaveButton.Caption = "Save Database";
-            this.SaveButton.Glyph = ((System.Drawing.Image)(resources.GetObject("SaveButton.Glyph")));
+            this.SaveButton.Caption = "保存数据";
             this.SaveButton.Id = 1;
-            this.SaveButton.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("SaveButton.LargeGlyph")));
+            this.SaveButton.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.ImageOptions.Image")));
+            this.SaveButton.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("SaveButton.ImageOptions.LargeImage")));
             this.SaveButton.LargeWidth = 60;
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SaveButton_ItemClick);
@@ -123,7 +123,7 @@
             this.CompanionInfoGridControl.Name = "CompanionInfoGridControl";
             this.CompanionInfoGridControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.MonsterInfoLookUpEdit});
-            this.CompanionInfoGridControl.Size = new System.Drawing.Size(954, 355);
+            this.CompanionInfoGridControl.Size = new System.Drawing.Size(1134, 412);
             this.CompanionInfoGridControl.TabIndex = 2;
             this.CompanionInfoGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.CompanionInfoGridView});
@@ -134,6 +134,7 @@
             this.gridColumn1,
             this.gridColumn3,
             this.gridColumn4});
+            this.CompanionInfoGridView.DetailHeight = 377;
             this.CompanionInfoGridView.GridControl = this.CompanionInfoGridControl;
             this.CompanionInfoGridView.Name = "CompanionInfoGridView";
             this.CompanionInfoGridView.OptionsView.EnableAppearanceEvenRow = true;
@@ -144,11 +145,14 @@
             // 
             // gridColumn1
             // 
+            this.gridColumn1.Caption = "怪物";
             this.gridColumn1.ColumnEdit = this.MonsterInfoLookUpEdit;
             this.gridColumn1.FieldName = "MonsterInfo";
+            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 87;
             // 
             // MonsterInfoLookUpEdit
             // 
@@ -169,17 +173,23 @@
             // 
             // gridColumn3
             // 
+            this.gridColumn3.Caption = "价格";
             this.gridColumn3.FieldName = "Price";
+            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 1;
+            this.gridColumn3.Width = 87;
             // 
             // gridColumn4
             // 
+            this.gridColumn4.Caption = "获得";
             this.gridColumn4.FieldName = "Available";
+            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 2;
+            this.gridColumn4.Width = 87;
             // 
             // tabPane1
             // 
@@ -187,30 +197,30 @@
             this.tabPane1.Controls.Add(this.tabNavigationPage2);
             this.tabPane1.Controls.Add(this.tabNavigationPage3);
             this.tabPane1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabPane1.Location = new System.Drawing.Point(0, 144);
+            this.tabPane1.Location = new System.Drawing.Point(0, 148);
             this.tabPane1.Name = "tabPane1";
             this.tabPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tabNavigationPage1,
             this.tabNavigationPage2,
             this.tabNavigationPage3});
-            this.tabPane1.RegularSize = new System.Drawing.Size(972, 400);
+            this.tabPane1.RegularSize = new System.Drawing.Size(1134, 438);
             this.tabPane1.SelectedPage = this.tabNavigationPage1;
-            this.tabPane1.Size = new System.Drawing.Size(972, 400);
+            this.tabPane1.Size = new System.Drawing.Size(1134, 438);
             this.tabPane1.TabIndex = 3;
             // 
             // tabNavigationPage1
             // 
-            this.tabNavigationPage1.Caption = "Companion Info";
+            this.tabNavigationPage1.Caption = "宠物信息";
             this.tabNavigationPage1.Controls.Add(this.CompanionInfoGridControl);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
-            this.tabNavigationPage1.Size = new System.Drawing.Size(954, 355);
+            this.tabNavigationPage1.Size = new System.Drawing.Size(1134, 412);
             // 
             // tabNavigationPage2
             // 
-            this.tabNavigationPage2.Caption = "Companion Level Info";
+            this.tabNavigationPage2.Caption = "宠物等级";
             this.tabNavigationPage2.Controls.Add(this.CompanionLevelInfoGridControl);
             this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(960, 358);
+            this.tabNavigationPage2.Size = new System.Drawing.Size(1134, 438);
             // 
             // CompanionLevelInfoGridControl
             // 
@@ -221,7 +231,7 @@
             this.CompanionLevelInfoGridControl.Name = "CompanionLevelInfoGridControl";
             this.CompanionLevelInfoGridControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEdit1});
-            this.CompanionLevelInfoGridControl.Size = new System.Drawing.Size(960, 358);
+            this.CompanionLevelInfoGridControl.Size = new System.Drawing.Size(1134, 438);
             this.CompanionLevelInfoGridControl.TabIndex = 3;
             this.CompanionLevelInfoGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.CompanionLevelInfoGridView});
@@ -234,6 +244,7 @@
             this.gridColumn6,
             this.gridColumn7,
             this.gridColumn8});
+            this.CompanionLevelInfoGridView.DetailHeight = 377;
             this.CompanionLevelInfoGridView.GridControl = this.CompanionLevelInfoGridControl;
             this.CompanionLevelInfoGridView.Name = "CompanionLevelInfoGridView";
             this.CompanionLevelInfoGridView.OptionsView.EnableAppearanceEvenRow = true;
@@ -245,37 +256,47 @@
             // gridColumn2
             // 
             this.gridColumn2.FieldName = "Level";
+            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 0;
+            this.gridColumn2.Width = 87;
             // 
             // gridColumn5
             // 
             this.gridColumn5.FieldName = "MaxExperience";
+            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 1;
+            this.gridColumn5.Width = 87;
             // 
             // gridColumn6
             // 
             this.gridColumn6.FieldName = "InventorySpace";
+            this.gridColumn6.MinWidth = 23;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 2;
+            this.gridColumn6.Width = 87;
             // 
             // gridColumn7
             // 
             this.gridColumn7.FieldName = "InventoryWeight";
+            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 3;
+            this.gridColumn7.Width = 87;
             // 
             // gridColumn8
             // 
             this.gridColumn8.FieldName = "MaxHunger";
+            this.gridColumn8.MinWidth = 23;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 4;
+            this.gridColumn8.Width = 87;
             // 
             // repositoryItemLookUpEdit1
             // 
@@ -296,10 +317,10 @@
             // 
             // tabNavigationPage3
             // 
-            this.tabNavigationPage3.Caption = "Companion Skill Info";
+            this.tabNavigationPage3.Caption = "宠物技能";
             this.tabNavigationPage3.Controls.Add(this.CompanionSkillInfoGridControl);
             this.tabNavigationPage3.Name = "tabNavigationPage3";
-            this.tabNavigationPage3.Size = new System.Drawing.Size(960, 358);
+            this.tabNavigationPage3.Size = new System.Drawing.Size(1134, 438);
             // 
             // CompanionSkillInfoGridControl
             // 
@@ -310,7 +331,7 @@
             this.CompanionSkillInfoGridControl.Name = "CompanionSkillInfoGridControl";
             this.CompanionSkillInfoGridControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEdit2});
-            this.CompanionSkillInfoGridControl.Size = new System.Drawing.Size(960, 358);
+            this.CompanionSkillInfoGridControl.Size = new System.Drawing.Size(1134, 438);
             this.CompanionSkillInfoGridControl.TabIndex = 4;
             this.CompanionSkillInfoGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.CompanionSkillInfoGridView});
@@ -323,6 +344,7 @@
             this.gridColumn11,
             this.gridColumn12,
             this.gridColumn13});
+            this.CompanionSkillInfoGridView.DetailHeight = 377;
             this.CompanionSkillInfoGridView.GridControl = this.CompanionSkillInfoGridControl;
             this.CompanionSkillInfoGridView.Name = "CompanionSkillInfoGridView";
             this.CompanionSkillInfoGridView.OptionsView.EnableAppearanceEvenRow = true;
@@ -334,37 +356,47 @@
             // gridColumn9
             // 
             this.gridColumn9.FieldName = "Level";
+            this.gridColumn9.MinWidth = 23;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 0;
+            this.gridColumn9.Width = 87;
             // 
             // gridColumn10
             // 
             this.gridColumn10.FieldName = "StatType";
+            this.gridColumn10.MinWidth = 23;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 1;
+            this.gridColumn10.Width = 87;
             // 
             // gridColumn11
             // 
             this.gridColumn11.FieldName = "MinAmount";
+            this.gridColumn11.MinWidth = 23;
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 2;
+            this.gridColumn11.Width = 87;
             // 
             // gridColumn12
             // 
             this.gridColumn12.FieldName = "MaxAmount";
+            this.gridColumn12.MinWidth = 23;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 3;
+            this.gridColumn12.Width = 87;
             // 
             // gridColumn13
             // 
             this.gridColumn13.FieldName = "Weight";
+            this.gridColumn13.MinWidth = 23;
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 4;
+            this.gridColumn13.Width = 87;
             // 
             // repositoryItemLookUpEdit2
             // 
@@ -385,9 +417,9 @@
             // 
             // CompanionInfoView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 544);
+            this.ClientSize = new System.Drawing.Size(1134, 586);
             this.Controls.Add(this.tabPane1);
             this.Controls.Add(this.ribbon);
             this.Name = "CompanionInfoView";

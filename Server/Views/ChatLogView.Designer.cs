@@ -52,14 +52,14 @@
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(717, 144);
+            this.ribbon.Size = new System.Drawing.Size(836, 148);
             // 
             // ClearLogsButton
             // 
-            this.ClearLogsButton.Caption = "Clear Logs";
-            this.ClearLogsButton.Glyph = ((System.Drawing.Image)(resources.GetObject("ClearLogsButton.Glyph")));
+            this.ClearLogsButton.Caption = "清空";
             this.ClearLogsButton.Id = 1;
-            this.ClearLogsButton.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("ClearLogsButton.LargeGlyph")));
+            this.ClearLogsButton.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ClearLogsButton.ImageOptions.Image")));
+            this.ClearLogsButton.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("ClearLogsButton.ImageOptions.LargeImage")));
             this.ClearLogsButton.LargeWidth = 50;
             this.ClearLogsButton.Name = "ClearLogsButton";
             this.ClearLogsButton.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ClearLogsButton_ItemClick);
@@ -69,7 +69,7 @@
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Home";
+            this.ribbonPage1.Text = "主页";
             // 
             // ribbonPageGroup1
             // 
@@ -84,9 +84,9 @@
             this.LogListBoxControl.Cursor = System.Windows.Forms.Cursors.Default;
             this.LogListBoxControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LogListBoxControl.ItemAutoHeight = true;
-            this.LogListBoxControl.Location = new System.Drawing.Point(0, 144);
+            this.LogListBoxControl.Location = new System.Drawing.Point(0, 148);
             this.LogListBoxControl.Name = "LogListBoxControl";
-            this.LogListBoxControl.Size = new System.Drawing.Size(717, 339);
+            this.LogListBoxControl.Size = new System.Drawing.Size(836, 372);
             this.LogListBoxControl.TabIndex = 1;
             // 
             // InterfaceTimer
@@ -97,9 +97,9 @@
             // 
             // ChatLogView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 483);
+            this.ClientSize = new System.Drawing.Size(836, 520);
             this.Controls.Add(this.LogListBoxControl);
             this.Controls.Add(this.ribbon);
             this.Name = "ChatLogView";

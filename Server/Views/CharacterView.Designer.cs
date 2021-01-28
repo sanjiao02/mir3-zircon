@@ -49,13 +49,16 @@
             // 
             // gridColumn6
             // 
+            gridColumn6.Caption = "账户";
             gridColumn6.ColumnEdit = this.AccountLookUpEdit;
             gridColumn6.FieldName = "Account";
+            gridColumn6.MinWidth = 23;
             gridColumn6.Name = "gridColumn6";
             gridColumn6.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
             gridColumn6.SortMode = DevExpress.XtraGrid.ColumnSortMode.DisplayText;
             gridColumn6.Visible = true;
             gridColumn6.VisibleIndex = 1;
+            gridColumn6.Width = 87;
             // 
             // AccountLookUpEdit
             // 
@@ -79,7 +82,7 @@
             this.CharacterGridControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit1,
             this.AccountLookUpEdit});
-            this.CharacterGridControl.Size = new System.Drawing.Size(654, 523);
+            this.CharacterGridControl.Size = new System.Drawing.Size(763, 563);
             this.CharacterGridControl.TabIndex = 0;
             this.CharacterGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.CharacterGridView});
@@ -95,59 +98,81 @@
             this.gridColumn5,
             this.gridColumn7,
             this.gridColumn8});
+            this.CharacterGridView.DetailHeight = 377;
             this.CharacterGridView.GridControl = this.CharacterGridControl;
             this.CharacterGridView.Name = "CharacterGridView";
             this.CharacterGridView.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
             // 
+            this.gridColumn1.Caption = "人物名";
             this.gridColumn1.FieldName = "CharacterName";
+            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 87;
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "职业";
             this.gridColumn2.FieldName = "Class";
+            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.Width = 87;
             // 
             // gridColumn3
             // 
+            this.gridColumn3.Caption = "性别";
             this.gridColumn3.FieldName = "Gender";
+            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 3;
+            this.gridColumn3.Width = 87;
             // 
             // gridColumn4
             // 
+            this.gridColumn4.Caption = "等级";
             this.gridColumn4.FieldName = "Level";
+            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 4;
+            this.gridColumn4.Width = 87;
             // 
             // gridColumn5
             // 
+            this.gridColumn5.Caption = "发型";
             this.gridColumn5.FieldName = "HairType";
+            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 5;
+            this.gridColumn5.Width = 87;
             // 
             // gridColumn7
             // 
+            this.gridColumn7.Caption = "已删除";
             this.gridColumn7.FieldName = "Deleted";
+            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 6;
+            this.gridColumn7.Width = 87;
             // 
             // gridColumn8
             // 
+            this.gridColumn8.Caption = "经验";
             this.gridColumn8.ColumnEdit = this.repositoryItemTextEdit1;
             this.gridColumn8.FieldName = "Experience";
+            this.gridColumn8.MinWidth = 23;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
+            this.gridColumn8.Width = 87;
             // 
             // repositoryItemTextEdit1
             // 
@@ -158,12 +183,12 @@
             // 
             // CharacterView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 523);
+            this.ClientSize = new System.Drawing.Size(763, 563);
             this.Controls.Add(this.CharacterGridControl);
             this.Name = "CharacterView";
-            this.Text = "Character View";
+            this.Text = "人物角色";
             ((System.ComponentModel.ISupportInitialize)(this.AccountLookUpEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterGridView)).EndInit();

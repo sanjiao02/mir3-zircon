@@ -600,7 +600,7 @@ namespace Server.Models
         {
             if (!SetBindPoint())
             {
-                SEnvir.Log($"[Failed to spawn Character] Index: {Character.Index}, Name: {Character.CharacterName}, Failed to reset bind point.");
+                SEnvir.Log($"[人物重生失败] Index: {Character.Index}, 名字: {Character.CharacterName}, 重生点失败");
                 Enqueue(new S.StartGame { Result = StartGameResult.UnableToSpawn });
                 Connection = null;
                 Character = null;
@@ -614,7 +614,7 @@ namespace Server.Models
 
             if (!Spawn(Character.CurrentMap, null, 0, CurrentLocation) && !Spawn(Character.BindPoint.BindRegion, null, 0))
             {
-                SEnvir.Log($"[Failed to spawn Character] Index: {Character.Index}, Name: {Character.CharacterName}");
+                SEnvir.Log($"[人物重生失败] Index: {Character.Index}, 名字: {Character.CharacterName}");
                 Enqueue(new S.StartGame { Result = StartGameResult.UnableToSpawn });
                 Connection = null;
                 Character = null;
@@ -1715,7 +1715,7 @@ namespace Server.Models
 
                         MarketPlaceCancelSuperior();
 
-                        Connection.ReceiveChat($"[Reboot Command] {(Time.Now - time).Ticks / TimeSpan.TicksPerMillisecond}ms", MessageType.System);
+                        Connection.ReceiveChat($"[重启命令] {(Time.Now - time).Ticks / TimeSpan.TicksPerMillisecond}ms", MessageType.System);
                         break;
                     case "GIVEGAMEGOLD":
                         if (!Character.Account.TempAdmin) return;
@@ -1744,7 +1744,7 @@ namespace Server.Models
                             }
                         }
 
-                        Connection.ReceiveChat(string.Format("[GIVE GAME GOLD] {0} Amount: {1}", character.CharacterName, count), MessageType.System);
+                        Connection.ReceiveChat(string.Format("[给游戏金币] {0} 数量: {1}", character.CharacterName, count), MessageType.System);
 
                         break;
                     case "REMOVEGAMEGOLD":
@@ -1774,7 +1774,7 @@ namespace Server.Models
                             }
                         }
 
-                        Connection.ReceiveChat(string.Format("[REMOVE GAME GOLD] {0} Amount: {1}", character.CharacterName, count), MessageType.System);
+                        Connection.ReceiveChat(string.Format("[移除游戏金币] {0} 数量: {1}", character.CharacterName, count), MessageType.System);
                         break;
                     case "TAKEGAMEGOLD":
                         if (!Character.Account.TempAdmin) return;
@@ -1790,7 +1790,7 @@ namespace Server.Models
                         character.Account.Connection?.ReceiveChat(string.Format(character.Account.Connection.Language.GameGoldLost, count), MessageType.System);
                         character.Player?.Enqueue(new S.GameGoldChanged { GameGold = character.Account.GameGold });
 
-                        Connection.ReceiveChat(string.Format("[TAKE GAME GOLD] {0} Amount: {1}", character.CharacterName, count), MessageType.System);
+                        Connection.ReceiveChat(string.Format("[取走游戏金币] {0} 数量: {1}", character.CharacterName, count), MessageType.System);
                         break;
                     case "REFUNDGAMEGOLD":
                         if (!Character.Account.TempAdmin) return;
@@ -1806,7 +1806,7 @@ namespace Server.Models
                         character.Account.Connection?.ReceiveChat(string.Format(character.Account.Connection.Language.GameGoldRefund, count), MessageType.System);
                         character.Player?.Enqueue(new S.GameGoldChanged { GameGold = character.Account.GameGold });
 
-                        Connection.ReceiveChat(string.Format("[REFUND GAME GOLD] {0} Amount: {1}", character.CharacterName, count), MessageType.System);
+                        Connection.ReceiveChat(string.Format("[退还游戏金币] {0} 数量: {1}", character.CharacterName, count), MessageType.System);
                         break;
                     case "REFUNDHUNTGOLD":
                         if (!Character.Account.TempAdmin) return;
@@ -1822,7 +1822,7 @@ namespace Server.Models
                         character.Account.Connection?.ReceiveChat(string.Format(character.Account.Connection.Language.HuntGoldRefund, count), MessageType.System);
                         character.Player?.Enqueue(new S.HuntGoldChanged { HuntGold = character.Account.HuntGold });
 
-                        Connection.ReceiveChat(string.Format("[REFUND HUNT GOLD] {0} Amount: {1}", character.CharacterName, count), MessageType.System);
+                        Connection.ReceiveChat(string.Format("[REFUND HUNT GOLD] {0} 数量: {1}", character.CharacterName, count), MessageType.System);
                         break;
                     case "CHATBAN":
                         if (!Character.Account.TempAdmin) return;
@@ -2032,7 +2032,7 @@ namespace Server.Models
 
                         memberInfo.Account = character.Account;
                         memberInfo.Guild = guildInfo;
-                        memberInfo.Rank = "Guild Leader";
+                        memberInfo.Rank = "公会领导";
                         memberInfo.JoinDate = SEnvir.Now;
                         memberInfo.Permission = GuildPermission.Leader;
 

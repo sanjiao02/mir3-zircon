@@ -50,13 +50,13 @@ namespace Server.Envir
 
             OnException += (o, e) =>
             {
-                SEnvir.Log(string.Format("Crashed: Account: {0}, Character: {1}.", Account?.EMailAddress, Player?.Name));
+                SEnvir.Log(string.Format("崩溃: 账户: {0}, 人物: {1}.", Account?.EMailAddress, Player?.Name));
                 SEnvir.Log(e.ToString());
                 SEnvir.Log(e.StackTrace.ToString());
                 File.AppendAllText(@".\Errors.txt", e.StackTrace + Environment.NewLine);
             };
 
-            SEnvir.Log(string.Format("[Connection] IP Address:{0}", IPAddress));
+            SEnvir.Log(string.Format("[连接] IP地址:{0}", IPAddress));
 
             UpdateTimeOut();
             BeginReceive();
@@ -73,7 +73,7 @@ namespace Server.Envir
             CleanUp();
 
             if (!SEnvir.Connections.Contains(this))
-                throw new InvalidOperationException("Connection was not found in list");
+                throw new InvalidOperationException("在列表中没有找到连接");
 
             SEnvir.Connections.Remove(this);
             SEnvir.IPCount[IPAddress]--;
@@ -186,7 +186,7 @@ namespace Server.Envir
                     if (SEnvir.Connections[i].IPAddress == IPAddress)
                         SEnvir.Connections[i].TryDisconnect();
 
-                SEnvir.Log($"{IPAddress} Disconnected, Large amount of Packets");
+                SEnvir.Log($"{IPAddress} 断开连接，大量数据包");
                 return;
             }
 

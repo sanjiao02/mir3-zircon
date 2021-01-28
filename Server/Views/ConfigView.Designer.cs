@@ -229,6 +229,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
+            this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PacketBanTimeEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPacketEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserCountPortEdit.Properties)).BeginInit();
@@ -236,6 +237,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TimeOutEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PortEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IPAddressEdit.Properties)).BeginInit();
+            this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllowRequestActivationEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllowWebActivationEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllowManualActivationEdit.Properties)).BeginInit();
@@ -254,6 +256,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.AllowLoginEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllowChangePasswordEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllowNewAccountEdit.Properties)).BeginInit();
+            this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RabbitEventEndEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReleaseDateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientPathEdit.Properties)).BeginInit();
@@ -262,6 +265,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DBSaveDelayEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VersionPathEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckVersionEdit.Properties)).BeginInit();
+            this.xtraTabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MailDisplayNameEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MailFromEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MailPasswordEdit.Properties)).BeginInit();
@@ -269,6 +273,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MailUseSSLEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MailPortEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MailServerEdit.Properties)).BeginInit();
+            this.xtraTabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllowBuyGameGoldEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProcessGameGoldEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReceiverEMailEdit.Properties)).BeginInit();
@@ -283,6 +288,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ActivationSuccessLinkEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WebCommandLinkEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WebPrefixEdit.Properties)).BeginInit();
+            this.xtraTabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AutoReviveDelayEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PvPCurseRateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PvPCurseDurationEdit.Properties)).BeginInit();
@@ -297,10 +303,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.GlobalDelayEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShoutDelayEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxViewRangeEdit.Properties)).BeginInit();
+            this.xtraTabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LairRegionIndexEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MysteryShipRegionIndexEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HarvestDurationEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeadDurationEdit.Properties)).BeginInit();
+            this.xtraTabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StrengthLossRateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StrengthAddRateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxStrengthEdit.Properties)).BeginInit();
@@ -313,6 +321,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DropLayersEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DropDistanceEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DropDurationEdit.Properties)).BeginInit();
+            this.xtraTabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CompanionRateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillRateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GoldRateEdit.Properties)).BeginInit();
@@ -321,9 +330,6 @@
             this.SuspendLayout();
             // 
             // ribbon
-            // 
-            // 
-            // 
             // 
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -335,11 +341,12 @@
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(775, 144);
+            this.ribbon.Size = new System.Drawing.Size(904, 148);
             // 
             // SaveButton
             // 
-            this.SaveButton.Caption = "Save";
+            this.SaveButton.Caption = "保存";
+            this.SaveButton.Hint = "保存";
             this.SaveButton.Id = 1;
             this.SaveButton.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.ImageOptions.Image")));
             this.SaveButton.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("SaveButton.ImageOptions.LargeImage")));
@@ -348,7 +355,7 @@
             // 
             // ReloadButton
             // 
-            this.ReloadButton.Caption = "Reload";
+            this.ReloadButton.Caption = "重载";
             this.ReloadButton.Id = 2;
             this.ReloadButton.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ReloadButton.ImageOptions.Image")));
             this.ReloadButton.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("ReloadButton.ImageOptions.LargeImage")));
@@ -374,10 +381,10 @@
             // xtraTabControl1
             // 
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl1.Location = new System.Drawing.Point(0, 144);
+            this.xtraTabControl1.Location = new System.Drawing.Point(0, 148);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(775, 423);
+            this.xtraTabControl1.Size = new System.Drawing.Size(904, 463);
             this.xtraTabControl1.TabIndex = 2;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -407,174 +414,161 @@
             this.xtraTabPage1.Controls.Add(this.PortEdit);
             this.xtraTabPage1.Controls.Add(this.IPAddressEdit);
             this.xtraTabPage1.Controls.Add(this.labelControl1);
-            this.xtraTabPage1.Enabled = true;
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(769, 395);
-            this.xtraTabPage1.Text = "Network";
+            this.xtraTabPage1.Size = new System.Drawing.Size(898, 434);
+            this.xtraTabPage1.Text = "网络";
             // 
             // PacketBanTimeEdit
             // 
             this.PacketBanTimeEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.PacketBanTimeEdit.Location = new System.Drawing.Point(108, 174);
+            this.PacketBanTimeEdit.Location = new System.Drawing.Point(126, 187);
             this.PacketBanTimeEdit.MenuManager = this.ribbon;
             this.PacketBanTimeEdit.Name = "PacketBanTimeEdit";
-            //
-            //
-            //
-            this.SyncronizeButton.Text = "Syncronize Remote DB";
-            this.SyncronizeButton.Location = new System.Drawing.Point(20, 200);
-            this.SyncronizeButton.Width = 200;
-            // 
-            // 
-            // 
             this.PacketBanTimeEdit.Properties.AllowEditDays = false;
             this.PacketBanTimeEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.PacketBanTimeEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.PacketBanTimeEdit.Size = new System.Drawing.Size(117, 20);
             this.PacketBanTimeEdit.TabIndex = 40;
+            // 
+            // SyncronizeButton
+            // 
+            this.SyncronizeButton.Location = new System.Drawing.Point(23, 215);
+            this.SyncronizeButton.Name = "SyncronizeButton";
+            this.SyncronizeButton.Size = new System.Drawing.Size(233, 25);
+            this.SyncronizeButton.TabIndex = 41;
+            this.SyncronizeButton.Text = "同步远程数据库";
             // 
             // labelControl86
             // 
-            this.labelControl86.Location = new System.Drawing.Point(20, 177);
+            this.labelControl86.Location = new System.Drawing.Point(40, 190);
             this.labelControl86.Name = "labelControl86";
-            this.labelControl86.Size = new System.Drawing.Size(82, 13);
+            this.labelControl86.Size = new System.Drawing.Size(80, 14);
             this.labelControl86.TabIndex = 39;
-            this.labelControl86.Text = "Packet Ban Time:";
+            this.labelControl86.Text = "封包禁止时间 :";
             // 
             // labelControl87
             // 
-            this.labelControl87.Location = new System.Drawing.Point(38, 151);
+            this.labelControl87.Location = new System.Drawing.Point(68, 162);
             this.labelControl87.Name = "labelControl87";
-            this.labelControl87.Size = new System.Drawing.Size(64, 13);
+            this.labelControl87.Size = new System.Drawing.Size(52, 14);
             this.labelControl87.TabIndex = 38;
-            this.labelControl87.Text = "Max Packets:";
+            this.labelControl87.Text = "最大封包:";
             // 
             // MaxPacketEdit
             // 
-            this.MaxPacketEdit.Location = new System.Drawing.Point(108, 148);
+            this.MaxPacketEdit.Location = new System.Drawing.Point(126, 159);
             this.MaxPacketEdit.MenuManager = this.ribbon;
             this.MaxPacketEdit.Name = "MaxPacketEdit";
-            // 
-            // 
-            // 
             this.MaxPacketEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MaxPacketEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.MaxPacketEdit.Properties.Mask.EditMask = "n0";
             this.MaxPacketEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaxPacketEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.MaxPacketEdit.Size = new System.Drawing.Size(117, 20);
             this.MaxPacketEdit.TabIndex = 37;
             // 
             // labelControl51
             // 
-            this.labelControl51.Location = new System.Drawing.Point(21, 125);
+            this.labelControl51.Location = new System.Drawing.Point(44, 134);
             this.labelControl51.Name = "labelControl51";
-            this.labelControl51.Size = new System.Drawing.Size(81, 13);
+            this.labelControl51.Size = new System.Drawing.Size(76, 14);
             this.labelControl51.TabIndex = 36;
-            this.labelControl51.Text = "User Count Port:";
+            this.labelControl51.Text = "用户数量端口:";
             // 
             // UserCountPortEdit
             // 
-            this.UserCountPortEdit.Location = new System.Drawing.Point(108, 122);
+            this.UserCountPortEdit.Location = new System.Drawing.Point(126, 131);
             this.UserCountPortEdit.MenuManager = this.ribbon;
             this.UserCountPortEdit.Name = "UserCountPortEdit";
-            // 
-            // 
-            // 
             this.UserCountPortEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.UserCountPortEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.UserCountPortEdit.Properties.Mask.EditMask = "n0";
             this.UserCountPortEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.UserCountPortEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.UserCountPortEdit.Size = new System.Drawing.Size(117, 20);
             this.UserCountPortEdit.TabIndex = 35;
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(48, 99);
+            this.labelControl6.Location = new System.Drawing.Point(69, 106);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(54, 13);
+            this.labelControl6.Size = new System.Drawing.Size(51, 14);
             this.labelControl6.TabIndex = 34;
-            this.labelControl6.Text = "Ping Delay:";
+            this.labelControl6.Text = "Ping延迟:";
             // 
             // PingDelayEdit
             // 
             this.PingDelayEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.PingDelayEdit.Location = new System.Drawing.Point(108, 96);
+            this.PingDelayEdit.Location = new System.Drawing.Point(126, 103);
             this.PingDelayEdit.MenuManager = this.ribbon;
             this.PingDelayEdit.Name = "PingDelayEdit";
-            // 
-            // 
-            // 
             this.PingDelayEdit.Properties.AllowEditDays = false;
             this.PingDelayEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.PingDelayEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.PingDelayEdit.Size = new System.Drawing.Size(117, 20);
             this.PingDelayEdit.TabIndex = 33;
             // 
             // TimeOutEdit
             // 
             this.TimeOutEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.TimeOutEdit.Location = new System.Drawing.Point(108, 70);
+            this.TimeOutEdit.Location = new System.Drawing.Point(126, 75);
             this.TimeOutEdit.MenuManager = this.ribbon;
             this.TimeOutEdit.Name = "TimeOutEdit";
-            // 
-            // 
-            // 
             this.TimeOutEdit.Properties.AllowEditDays = false;
             this.TimeOutEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.TimeOutEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.TimeOutEdit.Size = new System.Drawing.Size(117, 20);
             this.TimeOutEdit.TabIndex = 32;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(55, 73);
+            this.labelControl3.Location = new System.Drawing.Point(92, 78);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(47, 13);
+            this.labelControl3.Size = new System.Drawing.Size(28, 14);
             this.labelControl3.TabIndex = 31;
-            this.labelControl3.Text = "Time Out:";
+            this.labelControl3.Text = "超时:";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(78, 47);
+            this.labelControl2.Location = new System.Drawing.Point(92, 50);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(24, 13);
+            this.labelControl2.Size = new System.Drawing.Size(28, 14);
             this.labelControl2.TabIndex = 30;
-            this.labelControl2.Text = "Port:";
+            this.labelControl2.Text = "端口:";
             // 
             // PortEdit
             // 
-            this.PortEdit.Location = new System.Drawing.Point(108, 44);
+            this.PortEdit.Location = new System.Drawing.Point(126, 47);
             this.PortEdit.MenuManager = this.ribbon;
             this.PortEdit.Name = "PortEdit";
-            // 
-            // 
-            // 
             this.PortEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.PortEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.PortEdit.Properties.Mask.EditMask = "n0";
             this.PortEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.PortEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.PortEdit.Size = new System.Drawing.Size(117, 20);
             this.PortEdit.TabIndex = 29;
             // 
             // IPAddressEdit
             // 
-            this.IPAddressEdit.Location = new System.Drawing.Point(108, 18);
+            this.IPAddressEdit.Location = new System.Drawing.Point(126, 19);
             this.IPAddressEdit.MenuManager = this.ribbon;
             this.IPAddressEdit.Name = "IPAddressEdit";
-            // 
-            // 
-            // 
             this.IPAddressEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.IPAddressEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.IPAddressEdit.Size = new System.Drawing.Size(117, 20);
             this.IPAddressEdit.TabIndex = 27;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(46, 21);
+            this.labelControl1.Location = new System.Drawing.Point(81, 22);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(56, 13);
+            this.labelControl1.Size = new System.Drawing.Size(39, 14);
             this.labelControl1.TabIndex = 28;
-            this.labelControl1.Text = "IP Address:";
+            this.labelControl1.Text = "IP地址:";
             // 
             // xtraTabPage2
             // 
@@ -614,372 +608,318 @@
             this.xtraTabPage2.Controls.Add(this.AllowChangePasswordEdit);
             this.xtraTabPage2.Controls.Add(this.labelControl7);
             this.xtraTabPage2.Controls.Add(this.AllowNewAccountEdit);
-            this.xtraTabPage2.Enabled = true;
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(769, 396);
-            this.xtraTabPage2.Text = "Control";
+            this.xtraTabPage2.Size = new System.Drawing.Size(898, 434);
+            this.xtraTabPage2.Text = "控制";
             // 
             // labelControl16
             // 
-            this.labelControl16.Location = new System.Drawing.Point(403, 167);
+            this.labelControl16.Location = new System.Drawing.Point(532, 179);
             this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(117, 13);
+            this.labelControl16.Size = new System.Drawing.Size(76, 14);
             this.labelControl16.TabIndex = 95;
-            this.labelControl16.Text = "Allow Manual Activation:";
+            this.labelControl16.Text = "允许手动激活:";
             // 
             // AllowRequestActivationEdit
             // 
-            this.AllowRequestActivationEdit.Location = new System.Drawing.Point(526, 164);
+            this.AllowRequestActivationEdit.Location = new System.Drawing.Point(614, 177);
             this.AllowRequestActivationEdit.MenuManager = this.ribbon;
             this.AllowRequestActivationEdit.Name = "AllowRequestActivationEdit";
-            // 
-            // 
-            // 
             this.AllowRequestActivationEdit.Properties.Caption = "";
-            this.AllowRequestActivationEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowRequestActivationEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowRequestActivationEdit.TabIndex = 94;
             // 
             // labelControl22
             // 
-            this.labelControl22.Location = new System.Drawing.Point(415, 142);
+            this.labelControl22.Location = new System.Drawing.Point(530, 152);
             this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(105, 13);
+            this.labelControl22.Size = new System.Drawing.Size(78, 14);
             this.labelControl22.TabIndex = 93;
-            this.labelControl22.Text = "Allow Web Activation:";
+            this.labelControl22.Text = "允许Web激活:";
             // 
             // AllowWebActivationEdit
             // 
-            this.AllowWebActivationEdit.Location = new System.Drawing.Point(526, 139);
+            this.AllowWebActivationEdit.Location = new System.Drawing.Point(614, 150);
             this.AllowWebActivationEdit.MenuManager = this.ribbon;
             this.AllowWebActivationEdit.Name = "AllowWebActivationEdit";
-            // 
-            // 
-            // 
             this.AllowWebActivationEdit.Properties.Caption = "";
-            this.AllowWebActivationEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowWebActivationEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowWebActivationEdit.TabIndex = 92;
             // 
             // labelControl17
             // 
-            this.labelControl17.Location = new System.Drawing.Point(397, 117);
+            this.labelControl17.Location = new System.Drawing.Point(532, 125);
             this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(123, 13);
+            this.labelControl17.Size = new System.Drawing.Size(76, 14);
             this.labelControl17.TabIndex = 91;
-            this.labelControl17.Text = "Allow Request Activation:";
+            this.labelControl17.Text = "允许激活账户:";
             // 
             // AllowManualActivationEdit
             // 
-            this.AllowManualActivationEdit.Location = new System.Drawing.Point(526, 114);
+            this.AllowManualActivationEdit.Location = new System.Drawing.Point(614, 123);
             this.AllowManualActivationEdit.MenuManager = this.ribbon;
             this.AllowManualActivationEdit.Name = "AllowManualActivationEdit";
-            // 
-            // 
-            // 
             this.AllowManualActivationEdit.Properties.Caption = "";
-            this.AllowManualActivationEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowManualActivationEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowManualActivationEdit.TabIndex = 90;
             // 
             // labelControl18
             // 
-            this.labelControl18.Location = new System.Drawing.Point(415, 92);
+            this.labelControl18.Location = new System.Drawing.Point(532, 98);
             this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(105, 13);
+            this.labelControl18.Size = new System.Drawing.Size(76, 14);
             this.labelControl18.TabIndex = 89;
-            this.labelControl18.Text = "Allow Delete Account:";
+            this.labelControl18.Text = "允许删除账户:";
             // 
             // AllowDeleteAccountEdit
             // 
-            this.AllowDeleteAccountEdit.Location = new System.Drawing.Point(526, 89);
+            this.AllowDeleteAccountEdit.Location = new System.Drawing.Point(614, 96);
             this.AllowDeleteAccountEdit.MenuManager = this.ribbon;
             this.AllowDeleteAccountEdit.Name = "AllowDeleteAccountEdit";
-            // 
-            // 
-            // 
             this.AllowDeleteAccountEdit.Properties.Caption = "";
-            this.AllowDeleteAccountEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowDeleteAccountEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowDeleteAccountEdit.TabIndex = 88;
             // 
             // labelControl19
             // 
-            this.labelControl19.Location = new System.Drawing.Point(423, 67);
+            this.labelControl19.Location = new System.Drawing.Point(532, 71);
             this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(97, 13);
+            this.labelControl19.Size = new System.Drawing.Size(76, 14);
             this.labelControl19.TabIndex = 87;
-            this.labelControl19.Text = "Allow Manual Reset:";
+            this.labelControl19.Text = "允许手动重置:";
             // 
             // AllowManualResetPasswordEdit
             // 
-            this.AllowManualResetPasswordEdit.Location = new System.Drawing.Point(526, 64);
+            this.AllowManualResetPasswordEdit.Location = new System.Drawing.Point(614, 69);
             this.AllowManualResetPasswordEdit.MenuManager = this.ribbon;
             this.AllowManualResetPasswordEdit.Name = "AllowManualResetPasswordEdit";
-            // 
-            // 
-            // 
             this.AllowManualResetPasswordEdit.Properties.Caption = "";
-            this.AllowManualResetPasswordEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowManualResetPasswordEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowManualResetPasswordEdit.TabIndex = 86;
             // 
             // labelControl20
             // 
-            this.labelControl20.Location = new System.Drawing.Point(435, 42);
+            this.labelControl20.Location = new System.Drawing.Point(527, 44);
             this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(85, 13);
+            this.labelControl20.Size = new System.Drawing.Size(81, 14);
             this.labelControl20.TabIndex = 85;
-            this.labelControl20.Text = "Allow Web Reset:";
+            this.labelControl20.Text = "允许网页重置t:";
             // 
             // AllowWebResetPasswordEdit
             // 
-            this.AllowWebResetPasswordEdit.Location = new System.Drawing.Point(526, 39);
+            this.AllowWebResetPasswordEdit.Location = new System.Drawing.Point(614, 42);
             this.AllowWebResetPasswordEdit.MenuManager = this.ribbon;
             this.AllowWebResetPasswordEdit.Name = "AllowWebResetPasswordEdit";
-            // 
-            // 
-            // 
             this.AllowWebResetPasswordEdit.Properties.Caption = "";
-            this.AllowWebResetPasswordEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowWebResetPasswordEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowWebResetPasswordEdit.TabIndex = 84;
             // 
             // labelControl21
             // 
-            this.labelControl21.Location = new System.Drawing.Point(399, 17);
+            this.labelControl21.Location = new System.Drawing.Point(532, 17);
             this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(121, 13);
+            this.labelControl21.Size = new System.Drawing.Size(76, 14);
             this.labelControl21.TabIndex = 83;
-            this.labelControl21.Text = "Allow Request Password:";
+            this.labelControl21.Text = "允许更改密码:";
             // 
             // AllowRequestPasswordResetEdit
             // 
-            this.AllowRequestPasswordResetEdit.Location = new System.Drawing.Point(526, 14);
+            this.AllowRequestPasswordResetEdit.Location = new System.Drawing.Point(614, 15);
             this.AllowRequestPasswordResetEdit.MenuManager = this.ribbon;
             this.AllowRequestPasswordResetEdit.Name = "AllowRequestPasswordResetEdit";
-            // 
-            // 
-            // 
             this.AllowRequestPasswordResetEdit.Properties.Caption = "";
-            this.AllowRequestPasswordResetEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowRequestPasswordResetEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowRequestPasswordResetEdit.TabIndex = 82;
             // 
             // labelControl40
             // 
-            this.labelControl40.Location = new System.Drawing.Point(222, 42);
+            this.labelControl40.Location = new System.Drawing.Point(259, 45);
             this.labelControl40.Name = "labelControl40";
-            this.labelControl40.Size = new System.Drawing.Size(65, 13);
+            this.labelControl40.Size = new System.Drawing.Size(76, 14);
             this.labelControl40.TabIndex = 81;
-            this.labelControl40.Text = "Allow Wizard:";
+            this.labelControl40.Text = "允许建立法师:";
             // 
             // AllowWizardEdit
             // 
-            this.AllowWizardEdit.Location = new System.Drawing.Point(293, 39);
+            this.AllowWizardEdit.Location = new System.Drawing.Point(342, 42);
             this.AllowWizardEdit.MenuManager = this.ribbon;
             this.AllowWizardEdit.Name = "AllowWizardEdit";
-            // 
-            // 
-            // 
             this.AllowWizardEdit.Properties.Caption = "";
-            this.AllowWizardEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowWizardEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowWizardEdit.TabIndex = 80;
             // 
             // labelControl39
             // 
-            this.labelControl39.Location = new System.Drawing.Point(226, 67);
+            this.labelControl39.Location = new System.Drawing.Point(259, 72);
             this.labelControl39.Name = "labelControl39";
-            this.labelControl39.Size = new System.Drawing.Size(61, 13);
+            this.labelControl39.Size = new System.Drawing.Size(76, 14);
             this.labelControl39.TabIndex = 79;
-            this.labelControl39.Text = "Allow Taoist:";
+            this.labelControl39.Text = "允许建立道士:";
             // 
             // AllowTaoistEdit
             // 
-            this.AllowTaoistEdit.Location = new System.Drawing.Point(293, 64);
+            this.AllowTaoistEdit.Location = new System.Drawing.Point(342, 69);
             this.AllowTaoistEdit.MenuManager = this.ribbon;
             this.AllowTaoistEdit.Name = "AllowTaoistEdit";
-            // 
-            // 
-            // 
             this.AllowTaoistEdit.Properties.Caption = "";
-            this.AllowTaoistEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowTaoistEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowTaoistEdit.TabIndex = 78;
             // 
             // labelControl38
             // 
-            this.labelControl38.Location = new System.Drawing.Point(214, 92);
+            this.labelControl38.Location = new System.Drawing.Point(259, 99);
             this.labelControl38.Name = "labelControl38";
-            this.labelControl38.Size = new System.Drawing.Size(73, 13);
+            this.labelControl38.Size = new System.Drawing.Size(76, 14);
             this.labelControl38.TabIndex = 77;
-            this.labelControl38.Text = "Allow Assassin:";
+            this.labelControl38.Text = "允许建立刺客:";
             // 
             // AllowAssassinEdit
             // 
-            this.AllowAssassinEdit.Location = new System.Drawing.Point(293, 89);
+            this.AllowAssassinEdit.Location = new System.Drawing.Point(342, 96);
             this.AllowAssassinEdit.MenuManager = this.ribbon;
             this.AllowAssassinEdit.Name = "AllowAssassinEdit";
-            // 
-            // 
-            // 
             this.AllowAssassinEdit.Properties.Caption = "";
-            this.AllowAssassinEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowAssassinEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowAssassinEdit.TabIndex = 76;
             // 
             // labelControl36
             // 
-            this.labelControl36.Location = new System.Drawing.Point(219, 17);
+            this.labelControl36.Location = new System.Drawing.Point(259, 18);
             this.labelControl36.Name = "labelControl36";
-            this.labelControl36.Size = new System.Drawing.Size(68, 13);
+            this.labelControl36.Size = new System.Drawing.Size(76, 14);
             this.labelControl36.TabIndex = 73;
-            this.labelControl36.Text = "Allow Warrior:";
+            this.labelControl36.Text = "允许建立战士:";
             // 
             // AllowWarriorEdit
             // 
-            this.AllowWarriorEdit.Location = new System.Drawing.Point(293, 14);
+            this.AllowWarriorEdit.Location = new System.Drawing.Point(342, 15);
             this.AllowWarriorEdit.MenuManager = this.ribbon;
             this.AllowWarriorEdit.Name = "AllowWarriorEdit";
-            // 
-            // 
-            // 
             this.AllowWarriorEdit.Properties.Caption = "";
-            this.AllowWarriorEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowWarriorEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowWarriorEdit.TabIndex = 72;
             // 
             // labelControl15
             // 
-            this.labelControl15.Location = new System.Drawing.Point(41, 167);
+            this.labelControl15.Location = new System.Drawing.Point(48, 180);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(61, 13);
+            this.labelControl15.Size = new System.Drawing.Size(64, 14);
             this.labelControl15.TabIndex = 71;
-            this.labelControl15.Text = "Relog Delay:";
+            this.labelControl15.Text = "重登录延迟:";
             // 
             // RelogDelayEdit
             // 
             this.RelogDelayEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.RelogDelayEdit.Location = new System.Drawing.Point(108, 164);
+            this.RelogDelayEdit.Location = new System.Drawing.Point(126, 177);
             this.RelogDelayEdit.MenuManager = this.ribbon;
             this.RelogDelayEdit.Name = "RelogDelayEdit";
-            // 
-            // 
-            // 
             this.RelogDelayEdit.Properties.AllowEditDays = false;
             this.RelogDelayEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.RelogDelayEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.RelogDelayEdit.Size = new System.Drawing.Size(117, 20);
             this.RelogDelayEdit.TabIndex = 70;
             // 
             // labelControl14
             // 
-            this.labelControl14.Location = new System.Drawing.Point(44, 142);
+            this.labelControl14.Location = new System.Drawing.Point(60, 153);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(58, 13);
+            this.labelControl14.Size = new System.Drawing.Size(52, 14);
             this.labelControl14.TabIndex = 69;
-            this.labelControl14.Text = "Start Game:";
+            this.labelControl14.Text = "开始游戏:";
             // 
             // AllowStartGameEdit
             // 
-            this.AllowStartGameEdit.Location = new System.Drawing.Point(108, 139);
+            this.AllowStartGameEdit.Location = new System.Drawing.Point(126, 150);
             this.AllowStartGameEdit.MenuManager = this.ribbon;
             this.AllowStartGameEdit.Name = "AllowStartGameEdit";
-            // 
-            // 
-            // 
             this.AllowStartGameEdit.Properties.Caption = "";
-            this.AllowStartGameEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowStartGameEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowStartGameEdit.TabIndex = 68;
             // 
             // labelControl12
             // 
-            this.labelControl12.Location = new System.Drawing.Point(16, 117);
+            this.labelControl12.Location = new System.Drawing.Point(60, 126);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(86, 13);
+            this.labelControl12.Size = new System.Drawing.Size(52, 14);
             this.labelControl12.TabIndex = 67;
-            this.labelControl12.Text = "Delete Character:";
+            this.labelControl12.Text = "删除人物:";
             // 
             // AllowDeleteCharacterEdit
             // 
-            this.AllowDeleteCharacterEdit.Location = new System.Drawing.Point(108, 114);
+            this.AllowDeleteCharacterEdit.Location = new System.Drawing.Point(126, 123);
             this.AllowDeleteCharacterEdit.MenuManager = this.ribbon;
             this.AllowDeleteCharacterEdit.Name = "AllowDeleteCharacterEdit";
-            // 
-            // 
-            // 
             this.AllowDeleteCharacterEdit.Properties.Caption = "";
-            this.AllowDeleteCharacterEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowDeleteCharacterEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowDeleteCharacterEdit.TabIndex = 66;
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(26, 92);
+            this.labelControl11.Location = new System.Drawing.Point(60, 99);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(76, 13);
+            this.labelControl11.Size = new System.Drawing.Size(52, 14);
             this.labelControl11.TabIndex = 65;
-            this.labelControl11.Text = "New Character:";
+            this.labelControl11.Text = "创建人物:";
             // 
             // AllowNewCharacterEdit
             // 
-            this.AllowNewCharacterEdit.Location = new System.Drawing.Point(108, 89);
+            this.AllowNewCharacterEdit.Location = new System.Drawing.Point(126, 96);
             this.AllowNewCharacterEdit.MenuManager = this.ribbon;
             this.AllowNewCharacterEdit.Name = "AllowNewCharacterEdit";
-            // 
-            // 
-            // 
             this.AllowNewCharacterEdit.Properties.Caption = "";
-            this.AllowNewCharacterEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowNewCharacterEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowNewCharacterEdit.TabIndex = 64;
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(73, 67);
+            this.labelControl9.Location = new System.Drawing.Point(84, 72);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(29, 13);
+            this.labelControl9.Size = new System.Drawing.Size(28, 14);
             this.labelControl9.TabIndex = 63;
-            this.labelControl9.Text = "Login:";
+            this.labelControl9.Text = "登录:";
             // 
             // AllowLoginEdit
             // 
-            this.AllowLoginEdit.Location = new System.Drawing.Point(108, 64);
+            this.AllowLoginEdit.Location = new System.Drawing.Point(126, 69);
             this.AllowLoginEdit.MenuManager = this.ribbon;
             this.AllowLoginEdit.Name = "AllowLoginEdit";
-            // 
-            // 
-            // 
             this.AllowLoginEdit.Properties.Caption = "";
-            this.AllowLoginEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowLoginEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowLoginEdit.TabIndex = 62;
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(12, 42);
+            this.labelControl8.Location = new System.Drawing.Point(60, 45);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(90, 13);
+            this.labelControl8.Size = new System.Drawing.Size(52, 14);
             this.labelControl8.TabIndex = 61;
-            this.labelControl8.Text = "Change Password:";
+            this.labelControl8.Text = "更改密码:";
             // 
             // AllowChangePasswordEdit
             // 
-            this.AllowChangePasswordEdit.Location = new System.Drawing.Point(108, 39);
+            this.AllowChangePasswordEdit.Location = new System.Drawing.Point(126, 42);
             this.AllowChangePasswordEdit.MenuManager = this.ribbon;
             this.AllowChangePasswordEdit.Name = "AllowChangePasswordEdit";
-            // 
-            // 
-            // 
             this.AllowChangePasswordEdit.Properties.Caption = "";
-            this.AllowChangePasswordEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowChangePasswordEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowChangePasswordEdit.TabIndex = 60;
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(35, 17);
+            this.labelControl7.Location = new System.Drawing.Point(60, 18);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(67, 13);
+            this.labelControl7.Size = new System.Drawing.Size(52, 14);
             this.labelControl7.TabIndex = 59;
-            this.labelControl7.Text = "New Account:";
+            this.labelControl7.Text = "新建账户:";
             // 
             // AllowNewAccountEdit
             // 
-            this.AllowNewAccountEdit.Location = new System.Drawing.Point(108, 14);
+            this.AllowNewAccountEdit.Location = new System.Drawing.Point(126, 15);
             this.AllowNewAccountEdit.MenuManager = this.ribbon;
             this.AllowNewAccountEdit.Name = "AllowNewAccountEdit";
-            // 
-            // 
-            // 
             this.AllowNewAccountEdit.Properties.Caption = "";
-            this.AllowNewAccountEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowNewAccountEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowNewAccountEdit.TabIndex = 58;
             // 
             // xtraTabPage3
@@ -1001,196 +941,173 @@
             this.xtraTabPage3.Controls.Add(this.labelControl5);
             this.xtraTabPage3.Controls.Add(this.labelControl4);
             this.xtraTabPage3.Controls.Add(this.CheckVersionEdit);
-            this.xtraTabPage3.Enabled = true;
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(769, 396);
-            this.xtraTabPage3.Text = "System";
+            this.xtraTabPage3.Size = new System.Drawing.Size(898, 434);
+            this.xtraTabPage3.Text = "系统";
             // 
             // RabbitEventEndEdit
             // 
-            this.RabbitEventEndEdit.Location = new System.Drawing.Point(103, 275);
+            this.RabbitEventEndEdit.Location = new System.Drawing.Point(120, 296);
             this.RabbitEventEndEdit.MenuManager = this.ribbon;
             this.RabbitEventEndEdit.Name = "RabbitEventEndEdit";
-            // 
-            // 
-            // 
             this.RabbitEventEndEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.RabbitEventEndEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.RabbitEventEndEdit.Properties.Mask.EditMask = "f";
             this.RabbitEventEndEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret;
             this.RabbitEventEndEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.RabbitEventEndEdit.Size = new System.Drawing.Size(250, 20);
+            this.RabbitEventEndEdit.Size = new System.Drawing.Size(292, 20);
             this.RabbitEventEndEdit.TabIndex = 74;
             // 
             // labelControl85
             // 
-            this.labelControl85.Location = new System.Drawing.Point(31, 278);
+            this.labelControl85.Location = new System.Drawing.Point(36, 299);
             this.labelControl85.Name = "labelControl85";
-            this.labelControl85.Size = new System.Drawing.Size(66, 13);
+            this.labelControl85.Size = new System.Drawing.Size(74, 14);
             this.labelControl85.TabIndex = 75;
             this.labelControl85.Text = "Rabbit Event:";
             // 
             // ReleaseDateEdit
             // 
-            this.ReleaseDateEdit.Location = new System.Drawing.Point(103, 249);
+            this.ReleaseDateEdit.Location = new System.Drawing.Point(120, 268);
             this.ReleaseDateEdit.MenuManager = this.ribbon;
             this.ReleaseDateEdit.Name = "ReleaseDateEdit";
-            // 
-            // 
-            // 
             this.ReleaseDateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ReleaseDateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.ReleaseDateEdit.Properties.Mask.EditMask = "f";
             this.ReleaseDateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret;
             this.ReleaseDateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.ReleaseDateEdit.Size = new System.Drawing.Size(250, 20);
+            this.ReleaseDateEdit.Size = new System.Drawing.Size(292, 20);
             this.ReleaseDateEdit.TabIndex = 72;
             // 
             // labelControl70
             // 
-            this.labelControl70.Location = new System.Drawing.Point(31, 252);
+            this.labelControl70.Location = new System.Drawing.Point(58, 271);
             this.labelControl70.Name = "labelControl70";
-            this.labelControl70.Size = new System.Drawing.Size(66, 13);
+            this.labelControl70.Size = new System.Drawing.Size(52, 14);
             this.labelControl70.TabIndex = 73;
-            this.labelControl70.Text = "Releast Date:";
+            this.labelControl70.Text = "发布日期:";
             // 
             // ClientPathEdit
             // 
-            this.ClientPathEdit.Location = new System.Drawing.Point(103, 94);
+            this.ClientPathEdit.Location = new System.Drawing.Point(120, 101);
             this.ClientPathEdit.MenuManager = this.ribbon;
             this.ClientPathEdit.Name = "ClientPathEdit";
-            // 
-            // 
-            // 
             this.ClientPathEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.ClientPathEdit.Size = new System.Drawing.Size(250, 20);
+            this.ClientPathEdit.Size = new System.Drawing.Size(292, 20);
             this.ClientPathEdit.TabIndex = 71;
             this.ClientPathEdit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.ClientPathEdit_ButtonClick);
             // 
             // labelControl96
             // 
-            this.labelControl96.Location = new System.Drawing.Point(41, 97);
+            this.labelControl96.Location = new System.Drawing.Point(46, 104);
             this.labelControl96.Name = "labelControl96";
-            this.labelControl96.Size = new System.Drawing.Size(56, 13);
+            this.labelControl96.Size = new System.Drawing.Size(64, 14);
             this.labelControl96.TabIndex = 70;
-            this.labelControl96.Text = "Client Path:";
+            this.labelControl96.Text = "客户端路径:";
             // 
             // MasterPasswordEdit
             // 
-            this.MasterPasswordEdit.Location = new System.Drawing.Point(103, 198);
+            this.MasterPasswordEdit.Location = new System.Drawing.Point(120, 213);
             this.MasterPasswordEdit.MenuManager = this.ribbon;
             this.MasterPasswordEdit.Name = "MasterPasswordEdit";
-            // 
-            // 
-            // 
             this.MasterPasswordEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MasterPasswordEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.MasterPasswordEdit.Properties.PasswordChar = '*';
+            this.MasterPasswordEdit.Size = new System.Drawing.Size(117, 20);
             this.MasterPasswordEdit.TabIndex = 68;
             // 
             // labelControl67
             // 
-            this.labelControl67.Location = new System.Drawing.Point(11, 201);
+            this.labelControl67.Location = new System.Drawing.Point(65, 216);
             this.labelControl67.Name = "labelControl67";
-            this.labelControl67.Size = new System.Drawing.Size(86, 13);
+            this.labelControl67.Size = new System.Drawing.Size(45, 14);
             this.labelControl67.TabIndex = 69;
-            this.labelControl67.Text = "Master Password:";
+            this.labelControl67.Text = "GM密码:";
             // 
             // MapPathEdit
             // 
-            this.MapPathEdit.Location = new System.Drawing.Point(103, 172);
+            this.MapPathEdit.Location = new System.Drawing.Point(120, 185);
             this.MapPathEdit.MenuManager = this.ribbon;
             this.MapPathEdit.Name = "MapPathEdit";
-            // 
-            // 
-            // 
             this.MapPathEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.MapPathEdit.Size = new System.Drawing.Size(250, 20);
+            this.MapPathEdit.Size = new System.Drawing.Size(292, 20);
             this.MapPathEdit.TabIndex = 30;
             this.MapPathEdit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.MapPathEdit_ButtonClick);
             // 
             // labelControl13
             // 
-            this.labelControl13.Location = new System.Drawing.Point(48, 175);
+            this.labelControl13.Location = new System.Drawing.Point(22, 188);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(49, 13);
+            this.labelControl13.Size = new System.Drawing.Size(88, 14);
             this.labelControl13.TabIndex = 29;
-            this.labelControl13.Text = "Map Path:";
+            this.labelControl13.Text = "客户端地图位置:";
             // 
             // labelControl10
             // 
-            this.labelControl10.Location = new System.Drawing.Point(23, 149);
+            this.labelControl10.Location = new System.Drawing.Point(43, 160);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(74, 13);
+            this.labelControl10.Size = new System.Drawing.Size(67, 14);
             this.labelControl10.TabIndex = 28;
-            this.labelControl10.Text = "DB Save Delay:";
+            this.labelControl10.Text = "保存DB延迟:";
             // 
             // DBSaveDelayEdit
             // 
             this.DBSaveDelayEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.DBSaveDelayEdit.Location = new System.Drawing.Point(103, 146);
+            this.DBSaveDelayEdit.Location = new System.Drawing.Point(120, 157);
             this.DBSaveDelayEdit.MenuManager = this.ribbon;
             this.DBSaveDelayEdit.Name = "DBSaveDelayEdit";
-            // 
-            // 
-            // 
             this.DBSaveDelayEdit.Properties.AllowEditDays = false;
             this.DBSaveDelayEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DBSaveDelayEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.DBSaveDelayEdit.Size = new System.Drawing.Size(117, 20);
             this.DBSaveDelayEdit.TabIndex = 27;
             // 
             // CheckVersionButton
             // 
-            this.CheckVersionButton.Location = new System.Drawing.Point(103, 65);
+            this.CheckVersionButton.Location = new System.Drawing.Point(120, 70);
             this.CheckVersionButton.Name = "CheckVersionButton";
-            this.CheckVersionButton.Size = new System.Drawing.Size(86, 23);
+            this.CheckVersionButton.Size = new System.Drawing.Size(100, 25);
             this.CheckVersionButton.TabIndex = 26;
-            this.CheckVersionButton.Text = "Check Version";
+            this.CheckVersionButton.Text = "检测版本";
             this.CheckVersionButton.Click += new System.EventHandler(this.CheckVersionButton_Click);
             // 
             // VersionPathEdit
             // 
-            this.VersionPathEdit.Location = new System.Drawing.Point(103, 39);
+            this.VersionPathEdit.Location = new System.Drawing.Point(120, 42);
             this.VersionPathEdit.MenuManager = this.ribbon;
             this.VersionPathEdit.Name = "VersionPathEdit";
-            // 
-            // 
-            // 
             this.VersionPathEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.VersionPathEdit.Size = new System.Drawing.Size(250, 20);
+            this.VersionPathEdit.Size = new System.Drawing.Size(292, 20);
             this.VersionPathEdit.TabIndex = 25;
             this.VersionPathEdit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.VersionPathEdit_ButtonClick);
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(33, 42);
+            this.labelControl5.Location = new System.Drawing.Point(70, 45);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(64, 13);
+            this.labelControl5.Size = new System.Drawing.Size(40, 14);
             this.labelControl5.TabIndex = 24;
-            this.labelControl5.Text = "Version Path:";
+            this.labelControl5.Text = "登陆器:";
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(26, 17);
+            this.labelControl4.Location = new System.Drawing.Point(58, 18);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(71, 13);
+            this.labelControl4.Size = new System.Drawing.Size(52, 14);
             this.labelControl4.TabIndex = 23;
-            this.labelControl4.Text = "Check Version:";
+            this.labelControl4.Text = "检测版本:";
             // 
             // CheckVersionEdit
             // 
-            this.CheckVersionEdit.Location = new System.Drawing.Point(103, 14);
+            this.CheckVersionEdit.Location = new System.Drawing.Point(120, 15);
             this.CheckVersionEdit.MenuManager = this.ribbon;
             this.CheckVersionEdit.Name = "CheckVersionEdit";
-            // 
-            // 
-            // 
             this.CheckVersionEdit.Properties.Caption = "";
-            this.CheckVersionEdit.Size = new System.Drawing.Size(100, 19);
+            this.CheckVersionEdit.Size = new System.Drawing.Size(117, 19);
             this.CheckVersionEdit.TabIndex = 22;
             // 
             // xtraTabPage4
@@ -1209,154 +1126,138 @@
             this.xtraTabPage4.Controls.Add(this.MailPortEdit);
             this.xtraTabPage4.Controls.Add(this.MailServerEdit);
             this.xtraTabPage4.Controls.Add(this.labelControl26);
-            this.xtraTabPage4.Enabled = true;
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(769, 396);
-            this.xtraTabPage4.Text = "Mail";
+            this.xtraTabPage4.Size = new System.Drawing.Size(898, 434);
+            this.xtraTabPage4.Text = "邮箱";
             // 
             // MailDisplayNameEdit
             // 
-            this.MailDisplayNameEdit.Location = new System.Drawing.Point(108, 173);
+            this.MailDisplayNameEdit.Location = new System.Drawing.Point(126, 186);
             this.MailDisplayNameEdit.MenuManager = this.ribbon;
             this.MailDisplayNameEdit.Name = "MailDisplayNameEdit";
-            // 
-            // 
-            // 
             this.MailDisplayNameEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MailDisplayNameEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.MailDisplayNameEdit.Size = new System.Drawing.Size(117, 20);
             this.MailDisplayNameEdit.TabIndex = 70;
             // 
             // labelControl31
             // 
-            this.labelControl31.Location = new System.Drawing.Point(34, 176);
+            this.labelControl31.Location = new System.Drawing.Point(80, 189);
             this.labelControl31.Name = "labelControl31";
-            this.labelControl31.Size = new System.Drawing.Size(68, 13);
+            this.labelControl31.Size = new System.Drawing.Size(40, 14);
             this.labelControl31.TabIndex = 71;
-            this.labelControl31.Text = "Display Name:";
+            this.labelControl31.Text = "显示名:";
             // 
             // MailFromEdit
             // 
-            this.MailFromEdit.Location = new System.Drawing.Point(108, 147);
+            this.MailFromEdit.Location = new System.Drawing.Point(126, 158);
             this.MailFromEdit.MenuManager = this.ribbon;
             this.MailFromEdit.Name = "MailFromEdit";
-            // 
-            // 
-            // 
             this.MailFromEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MailFromEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.MailFromEdit.Size = new System.Drawing.Size(117, 20);
             this.MailFromEdit.TabIndex = 68;
             // 
             // labelControl30
             // 
-            this.labelControl30.Location = new System.Drawing.Point(74, 150);
+            this.labelControl30.Location = new System.Drawing.Point(80, 160);
             this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(28, 13);
+            this.labelControl30.Size = new System.Drawing.Size(40, 14);
             this.labelControl30.TabIndex = 69;
-            this.labelControl30.Text = "From:";
+            this.labelControl30.Text = "发送自:";
             // 
             // MailPasswordEdit
             // 
-            this.MailPasswordEdit.Location = new System.Drawing.Point(108, 121);
+            this.MailPasswordEdit.Location = new System.Drawing.Point(126, 130);
             this.MailPasswordEdit.MenuManager = this.ribbon;
             this.MailPasswordEdit.Name = "MailPasswordEdit";
-            // 
-            // 
-            // 
             this.MailPasswordEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MailPasswordEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.MailPasswordEdit.Properties.PasswordChar = '*';
+            this.MailPasswordEdit.Size = new System.Drawing.Size(117, 20);
             this.MailPasswordEdit.TabIndex = 66;
             // 
             // labelControl29
             // 
-            this.labelControl29.Location = new System.Drawing.Point(52, 124);
+            this.labelControl29.Location = new System.Drawing.Point(92, 133);
             this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(50, 13);
+            this.labelControl29.Size = new System.Drawing.Size(28, 14);
             this.labelControl29.TabIndex = 67;
-            this.labelControl29.Text = "Password:";
+            this.labelControl29.Text = "密码:";
             // 
             // MailAccountEdit
             // 
-            this.MailAccountEdit.Location = new System.Drawing.Point(108, 95);
+            this.MailAccountEdit.Location = new System.Drawing.Point(126, 102);
             this.MailAccountEdit.MenuManager = this.ribbon;
             this.MailAccountEdit.Name = "MailAccountEdit";
-            // 
-            // 
-            // 
             this.MailAccountEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MailAccountEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.MailAccountEdit.Size = new System.Drawing.Size(117, 20);
             this.MailAccountEdit.TabIndex = 64;
             // 
             // labelControl28
             // 
-            this.labelControl28.Location = new System.Drawing.Point(59, 98);
+            this.labelControl28.Location = new System.Drawing.Point(92, 105);
             this.labelControl28.Name = "labelControl28";
-            this.labelControl28.Size = new System.Drawing.Size(43, 13);
+            this.labelControl28.Size = new System.Drawing.Size(28, 14);
             this.labelControl28.TabIndex = 65;
-            this.labelControl28.Text = "Account:";
+            this.labelControl28.Text = "账户:";
             // 
             // labelControl27
             // 
-            this.labelControl27.Location = new System.Drawing.Point(60, 73);
+            this.labelControl27.Location = new System.Drawing.Point(72, 78);
             this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(42, 13);
+            this.labelControl27.Size = new System.Drawing.Size(48, 14);
             this.labelControl27.TabIndex = 63;
-            this.labelControl27.Text = "Use SSL:";
+            this.labelControl27.Text = "使用SSL:";
             // 
             // MailUseSSLEdit
             // 
-            this.MailUseSSLEdit.Location = new System.Drawing.Point(108, 70);
+            this.MailUseSSLEdit.Location = new System.Drawing.Point(126, 75);
             this.MailUseSSLEdit.MenuManager = this.ribbon;
             this.MailUseSSLEdit.Name = "MailUseSSLEdit";
-            // 
-            // 
-            // 
             this.MailUseSSLEdit.Properties.Caption = "";
-            this.MailUseSSLEdit.Size = new System.Drawing.Size(100, 19);
+            this.MailUseSSLEdit.Size = new System.Drawing.Size(117, 19);
             this.MailUseSSLEdit.TabIndex = 62;
             // 
             // labelControl25
             // 
-            this.labelControl25.Location = new System.Drawing.Point(78, 47);
+            this.labelControl25.Location = new System.Drawing.Point(92, 50);
             this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(24, 13);
+            this.labelControl25.Size = new System.Drawing.Size(28, 14);
             this.labelControl25.TabIndex = 34;
-            this.labelControl25.Text = "Port:";
+            this.labelControl25.Text = "端口:";
             // 
             // MailPortEdit
             // 
-            this.MailPortEdit.Location = new System.Drawing.Point(108, 44);
+            this.MailPortEdit.Location = new System.Drawing.Point(126, 47);
             this.MailPortEdit.MenuManager = this.ribbon;
             this.MailPortEdit.Name = "MailPortEdit";
-            // 
-            // 
-            // 
             this.MailPortEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MailPortEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.MailPortEdit.Properties.Mask.EditMask = "n0";
             this.MailPortEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MailPortEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.MailPortEdit.Size = new System.Drawing.Size(117, 20);
             this.MailPortEdit.TabIndex = 33;
             // 
             // MailServerEdit
             // 
-            this.MailServerEdit.Location = new System.Drawing.Point(108, 18);
+            this.MailServerEdit.Location = new System.Drawing.Point(126, 19);
             this.MailServerEdit.MenuManager = this.ribbon;
             this.MailServerEdit.Name = "MailServerEdit";
-            // 
-            // 
-            // 
             this.MailServerEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MailServerEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.MailServerEdit.Size = new System.Drawing.Size(117, 20);
             this.MailServerEdit.TabIndex = 31;
             // 
             // labelControl26
             // 
-            this.labelControl26.Location = new System.Drawing.Point(66, 21);
+            this.labelControl26.Location = new System.Drawing.Point(80, 22);
             this.labelControl26.Name = "labelControl26";
-            this.labelControl26.Size = new System.Drawing.Size(36, 13);
+            this.labelControl26.Size = new System.Drawing.Size(40, 14);
             this.labelControl26.TabIndex = 32;
-            this.labelControl26.Text = "Server:";
+            this.labelControl26.Text = "服务器:";
             // 
             // xtraTabPage5
             // 
@@ -1388,303 +1289,260 @@
             this.xtraTabPage5.Controls.Add(this.WebCommandLinkEdit);
             this.xtraTabPage5.Controls.Add(this.WebPrefixEdit);
             this.xtraTabPage5.Controls.Add(this.labelControl42);
-            this.xtraTabPage5.Enabled = true;
             this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(769, 396);
-            this.xtraTabPage5.Text = "Web Server";
+            this.xtraTabPage5.Size = new System.Drawing.Size(898, 434);
+            this.xtraTabPage5.Text = "Web服务器";
             // 
             // labelControl81
             // 
-            this.labelControl81.Location = new System.Drawing.Point(375, 203);
+            this.labelControl81.Location = new System.Drawing.Point(437, 219);
             this.labelControl81.Name = "labelControl81";
-            this.labelControl81.Size = new System.Drawing.Size(104, 13);
+            this.labelControl81.Size = new System.Drawing.Size(120, 14);
             this.labelControl81.TabIndex = 101;
             this.labelControl81.Text = "Allow Buy Game Gold:";
             // 
             // AllowBuyGameGoldEdit
             // 
-            this.AllowBuyGameGoldEdit.Location = new System.Drawing.Point(485, 200);
+            this.AllowBuyGameGoldEdit.Location = new System.Drawing.Point(566, 215);
             this.AllowBuyGameGoldEdit.MenuManager = this.ribbon;
             this.AllowBuyGameGoldEdit.Name = "AllowBuyGameGoldEdit";
-            // 
-            // 
-            // 
             this.AllowBuyGameGoldEdit.Properties.Caption = "";
-            this.AllowBuyGameGoldEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowBuyGameGoldEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowBuyGameGoldEdit.TabIndex = 100;
             // 
             // labelControl80
             // 
-            this.labelControl80.Location = new System.Drawing.Point(384, 177);
+            this.labelControl80.Location = new System.Drawing.Point(448, 191);
             this.labelControl80.Name = "labelControl80";
-            this.labelControl80.Size = new System.Drawing.Size(95, 13);
+            this.labelControl80.Size = new System.Drawing.Size(108, 14);
             this.labelControl80.TabIndex = 99;
             this.labelControl80.Text = "Process Game Gold:";
             // 
             // ProcessGameGoldEdit
             // 
-            this.ProcessGameGoldEdit.Location = new System.Drawing.Point(485, 174);
+            this.ProcessGameGoldEdit.Location = new System.Drawing.Point(566, 187);
             this.ProcessGameGoldEdit.MenuManager = this.ribbon;
             this.ProcessGameGoldEdit.Name = "ProcessGameGoldEdit";
-            // 
-            // 
-            // 
             this.ProcessGameGoldEdit.Properties.Caption = "";
-            this.ProcessGameGoldEdit.Size = new System.Drawing.Size(100, 19);
+            this.ProcessGameGoldEdit.Size = new System.Drawing.Size(117, 19);
             this.ProcessGameGoldEdit.TabIndex = 98;
             // 
             // ReceiverEMailEdit
             // 
-            this.ReceiverEMailEdit.Location = new System.Drawing.Point(485, 122);
+            this.ReceiverEMailEdit.Location = new System.Drawing.Point(566, 131);
             this.ReceiverEMailEdit.MenuManager = this.ribbon;
             this.ReceiverEMailEdit.Name = "ReceiverEMailEdit";
-            // 
-            // 
-            // 
             this.ReceiverEMailEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ReceiverEMailEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ReceiverEMailEdit.Size = new System.Drawing.Size(210, 20);
+            this.ReceiverEMailEdit.Size = new System.Drawing.Size(245, 20);
             this.ReceiverEMailEdit.TabIndex = 96;
             // 
             // labelControl79
             // 
-            this.labelControl79.Location = new System.Drawing.Point(406, 125);
+            this.labelControl79.Location = new System.Drawing.Point(474, 135);
             this.labelControl79.Name = "labelControl79";
-            this.labelControl79.Size = new System.Drawing.Size(73, 13);
+            this.labelControl79.Size = new System.Drawing.Size(80, 14);
             this.labelControl79.TabIndex = 97;
             this.labelControl79.Text = "Receiver EMail:";
             // 
             // IPNPrefixEdit
             // 
-            this.IPNPrefixEdit.Location = new System.Drawing.Point(485, 96);
+            this.IPNPrefixEdit.Location = new System.Drawing.Point(566, 103);
             this.IPNPrefixEdit.MenuManager = this.ribbon;
             this.IPNPrefixEdit.Name = "IPNPrefixEdit";
-            // 
-            // 
-            // 
             this.IPNPrefixEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.IPNPrefixEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.IPNPrefixEdit.Size = new System.Drawing.Size(210, 20);
+            this.IPNPrefixEdit.Size = new System.Drawing.Size(245, 20);
             this.IPNPrefixEdit.TabIndex = 94;
             // 
             // labelControl73
             // 
-            this.labelControl73.Location = new System.Drawing.Point(427, 99);
+            this.labelControl73.Location = new System.Drawing.Point(498, 107);
             this.labelControl73.Name = "labelControl73";
-            this.labelControl73.Size = new System.Drawing.Size(52, 13);
+            this.labelControl73.Size = new System.Drawing.Size(57, 14);
             this.labelControl73.TabIndex = 95;
             this.labelControl73.Text = "IPN Prefix:";
             // 
             // BuyAddressEdit
             // 
-            this.BuyAddressEdit.Location = new System.Drawing.Point(485, 44);
+            this.BuyAddressEdit.Location = new System.Drawing.Point(566, 47);
             this.BuyAddressEdit.MenuManager = this.ribbon;
             this.BuyAddressEdit.Name = "BuyAddressEdit";
-            // 
-            // 
-            // 
             this.BuyAddressEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.BuyAddressEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.BuyAddressEdit.Size = new System.Drawing.Size(210, 20);
+            this.BuyAddressEdit.Size = new System.Drawing.Size(245, 20);
             this.BuyAddressEdit.TabIndex = 92;
             // 
             // labelControl72
             // 
-            this.labelControl72.Location = new System.Drawing.Point(415, 47);
+            this.labelControl72.Location = new System.Drawing.Point(484, 51);
             this.labelControl72.Name = "labelControl72";
-            this.labelControl72.Size = new System.Drawing.Size(64, 13);
+            this.labelControl72.Size = new System.Drawing.Size(71, 14);
             this.labelControl72.TabIndex = 93;
             this.labelControl72.Text = "Buy Address:";
             // 
             // BuyPrefixEdit
             // 
-            this.BuyPrefixEdit.Location = new System.Drawing.Point(485, 18);
+            this.BuyPrefixEdit.Location = new System.Drawing.Point(566, 19);
             this.BuyPrefixEdit.MenuManager = this.ribbon;
             this.BuyPrefixEdit.Name = "BuyPrefixEdit";
-            // 
-            // 
-            // 
             this.BuyPrefixEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.BuyPrefixEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.BuyPrefixEdit.Size = new System.Drawing.Size(210, 20);
+            this.BuyPrefixEdit.Size = new System.Drawing.Size(245, 20);
             this.BuyPrefixEdit.TabIndex = 90;
             // 
             // labelControl71
             // 
-            this.labelControl71.Location = new System.Drawing.Point(426, 21);
+            this.labelControl71.Location = new System.Drawing.Point(497, 23);
             this.labelControl71.Name = "labelControl71";
-            this.labelControl71.Size = new System.Drawing.Size(53, 13);
+            this.labelControl71.Size = new System.Drawing.Size(58, 14);
             this.labelControl71.TabIndex = 91;
             this.labelControl71.Text = "Buy Prefix:";
             // 
             // DeleteFailLinkEdit
             // 
-            this.DeleteFailLinkEdit.Location = new System.Drawing.Point(149, 278);
+            this.DeleteFailLinkEdit.Location = new System.Drawing.Point(174, 299);
             this.DeleteFailLinkEdit.MenuManager = this.ribbon;
             this.DeleteFailLinkEdit.Name = "DeleteFailLinkEdit";
-            // 
-            // 
-            // 
             this.DeleteFailLinkEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.DeleteFailLinkEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.DeleteFailLinkEdit.Size = new System.Drawing.Size(210, 20);
+            this.DeleteFailLinkEdit.Size = new System.Drawing.Size(245, 20);
             this.DeleteFailLinkEdit.TabIndex = 88;
             // 
             // labelControl37
             // 
-            this.labelControl37.Location = new System.Drawing.Point(71, 281);
+            this.labelControl37.Location = new System.Drawing.Point(83, 303);
             this.labelControl37.Name = "labelControl37";
-            this.labelControl37.Size = new System.Drawing.Size(75, 13);
+            this.labelControl37.Size = new System.Drawing.Size(85, 14);
             this.labelControl37.TabIndex = 89;
             this.labelControl37.Text = "Delete Fail Link:";
             // 
             // DeleteSuccessLinkEdit
             // 
-            this.DeleteSuccessLinkEdit.Location = new System.Drawing.Point(149, 252);
+            this.DeleteSuccessLinkEdit.Location = new System.Drawing.Point(174, 271);
             this.DeleteSuccessLinkEdit.MenuManager = this.ribbon;
             this.DeleteSuccessLinkEdit.Name = "DeleteSuccessLinkEdit";
-            // 
-            // 
-            // 
             this.DeleteSuccessLinkEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.DeleteSuccessLinkEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.DeleteSuccessLinkEdit.Size = new System.Drawing.Size(210, 20);
+            this.DeleteSuccessLinkEdit.Size = new System.Drawing.Size(245, 20);
             this.DeleteSuccessLinkEdit.TabIndex = 86;
             // 
             // labelControl43
             // 
-            this.labelControl43.Location = new System.Drawing.Point(49, 255);
+            this.labelControl43.Location = new System.Drawing.Point(57, 275);
             this.labelControl43.Name = "labelControl43";
-            this.labelControl43.Size = new System.Drawing.Size(97, 13);
+            this.labelControl43.Size = new System.Drawing.Size(112, 14);
             this.labelControl43.TabIndex = 87;
             this.labelControl43.Text = "Delete Success Link:";
             // 
             // ResetFailLinkEdit
             // 
-            this.ResetFailLinkEdit.Location = new System.Drawing.Point(149, 200);
+            this.ResetFailLinkEdit.Location = new System.Drawing.Point(174, 215);
             this.ResetFailLinkEdit.MenuManager = this.ribbon;
             this.ResetFailLinkEdit.Name = "ResetFailLinkEdit";
-            // 
-            // 
-            // 
             this.ResetFailLinkEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ResetFailLinkEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ResetFailLinkEdit.Size = new System.Drawing.Size(210, 20);
+            this.ResetFailLinkEdit.Size = new System.Drawing.Size(245, 20);
             this.ResetFailLinkEdit.TabIndex = 84;
             // 
             // labelControl32
             // 
-            this.labelControl32.Location = new System.Drawing.Point(71, 203);
+            this.labelControl32.Location = new System.Drawing.Point(83, 219);
             this.labelControl32.Name = "labelControl32";
-            this.labelControl32.Size = new System.Drawing.Size(72, 13);
+            this.labelControl32.Size = new System.Drawing.Size(80, 14);
             this.labelControl32.TabIndex = 85;
             this.labelControl32.Text = "Reset Fail Link:";
             // 
             // ResetSuccessLinkEdit
             // 
-            this.ResetSuccessLinkEdit.Location = new System.Drawing.Point(149, 174);
+            this.ResetSuccessLinkEdit.Location = new System.Drawing.Point(174, 187);
             this.ResetSuccessLinkEdit.MenuManager = this.ribbon;
             this.ResetSuccessLinkEdit.Name = "ResetSuccessLinkEdit";
-            // 
-            // 
-            // 
             this.ResetSuccessLinkEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ResetSuccessLinkEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ResetSuccessLinkEdit.Size = new System.Drawing.Size(210, 20);
+            this.ResetSuccessLinkEdit.Size = new System.Drawing.Size(245, 20);
             this.ResetSuccessLinkEdit.TabIndex = 82;
             // 
             // labelControl33
             // 
-            this.labelControl33.Location = new System.Drawing.Point(49, 177);
+            this.labelControl33.Location = new System.Drawing.Point(57, 191);
             this.labelControl33.Name = "labelControl33";
-            this.labelControl33.Size = new System.Drawing.Size(94, 13);
+            this.labelControl33.Size = new System.Drawing.Size(107, 14);
             this.labelControl33.TabIndex = 83;
             this.labelControl33.Text = "Reset Success Link:";
             // 
             // ActivationFailLinkEdit
             // 
-            this.ActivationFailLinkEdit.Location = new System.Drawing.Point(149, 122);
+            this.ActivationFailLinkEdit.Location = new System.Drawing.Point(174, 131);
             this.ActivationFailLinkEdit.MenuManager = this.ribbon;
             this.ActivationFailLinkEdit.Name = "ActivationFailLinkEdit";
-            // 
-            // 
-            // 
             this.ActivationFailLinkEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ActivationFailLinkEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ActivationFailLinkEdit.Size = new System.Drawing.Size(210, 20);
+            this.ActivationFailLinkEdit.Size = new System.Drawing.Size(245, 20);
             this.ActivationFailLinkEdit.TabIndex = 80;
             // 
             // labelControl34
             // 
-            this.labelControl34.Location = new System.Drawing.Point(51, 125);
+            this.labelControl34.Location = new System.Drawing.Point(59, 135);
             this.labelControl34.Name = "labelControl34";
-            this.labelControl34.Size = new System.Drawing.Size(92, 13);
+            this.labelControl34.Size = new System.Drawing.Size(103, 14);
             this.labelControl34.TabIndex = 81;
             this.labelControl34.Text = "Activation Fail Link:";
             // 
             // ActivationSuccessLinkEdit
             // 
-            this.ActivationSuccessLinkEdit.Location = new System.Drawing.Point(149, 96);
+            this.ActivationSuccessLinkEdit.Location = new System.Drawing.Point(174, 103);
             this.ActivationSuccessLinkEdit.MenuManager = this.ribbon;
             this.ActivationSuccessLinkEdit.Name = "ActivationSuccessLinkEdit";
-            // 
-            // 
-            // 
             this.ActivationSuccessLinkEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ActivationSuccessLinkEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ActivationSuccessLinkEdit.Size = new System.Drawing.Size(210, 20);
+            this.ActivationSuccessLinkEdit.Size = new System.Drawing.Size(245, 20);
             this.ActivationSuccessLinkEdit.TabIndex = 78;
             // 
             // labelControl35
             // 
-            this.labelControl35.Location = new System.Drawing.Point(29, 99);
+            this.labelControl35.Location = new System.Drawing.Point(34, 107);
             this.labelControl35.Name = "labelControl35";
-            this.labelControl35.Size = new System.Drawing.Size(114, 13);
+            this.labelControl35.Size = new System.Drawing.Size(130, 14);
             this.labelControl35.TabIndex = 79;
             this.labelControl35.Text = "Activation Success Link:";
             // 
             // labelControl41
             // 
-            this.labelControl41.Location = new System.Drawing.Point(71, 47);
+            this.labelControl41.Location = new System.Drawing.Point(83, 51);
             this.labelControl41.Name = "labelControl41";
-            this.labelControl41.Size = new System.Drawing.Size(72, 13);
+            this.labelControl41.Size = new System.Drawing.Size(83, 14);
             this.labelControl41.TabIndex = 75;
             this.labelControl41.Text = "Command Link:";
             // 
             // WebCommandLinkEdit
             // 
-            this.WebCommandLinkEdit.Location = new System.Drawing.Point(149, 44);
+            this.WebCommandLinkEdit.Location = new System.Drawing.Point(174, 47);
             this.WebCommandLinkEdit.MenuManager = this.ribbon;
             this.WebCommandLinkEdit.Name = "WebCommandLinkEdit";
-            // 
-            // 
-            // 
             this.WebCommandLinkEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.WebCommandLinkEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.WebCommandLinkEdit.Properties.Mask.EditMask = "n0";
             this.WebCommandLinkEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.WebCommandLinkEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.WebCommandLinkEdit.Size = new System.Drawing.Size(210, 20);
+            this.WebCommandLinkEdit.Size = new System.Drawing.Size(245, 20);
             this.WebCommandLinkEdit.TabIndex = 74;
             // 
             // WebPrefixEdit
             // 
-            this.WebPrefixEdit.Location = new System.Drawing.Point(149, 18);
+            this.WebPrefixEdit.Location = new System.Drawing.Point(174, 19);
             this.WebPrefixEdit.MenuManager = this.ribbon;
             this.WebPrefixEdit.Name = "WebPrefixEdit";
-            // 
-            // 
-            // 
             this.WebPrefixEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.WebPrefixEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.WebPrefixEdit.Size = new System.Drawing.Size(210, 20);
+            this.WebPrefixEdit.Size = new System.Drawing.Size(245, 20);
             this.WebPrefixEdit.TabIndex = 72;
             // 
             // labelControl42
             // 
-            this.labelControl42.Location = new System.Drawing.Point(86, 21);
+            this.labelControl42.Location = new System.Drawing.Point(100, 23);
             this.labelControl42.Name = "labelControl42";
-            this.labelControl42.Size = new System.Drawing.Size(57, 13);
+            this.labelControl42.Size = new System.Drawing.Size(64, 14);
             this.labelControl42.TabIndex = 73;
             this.labelControl42.Text = "Web Prefix:";
             // 
@@ -1718,329 +1576,299 @@
             this.xtraTabPage6.Controls.Add(this.ShoutDelayEdit);
             this.xtraTabPage6.Controls.Add(this.MaxViewRangeEdit);
             this.xtraTabPage6.Controls.Add(this.labelControl23);
-            this.xtraTabPage6.Enabled = true;
             this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(769, 396);
-            this.xtraTabPage6.Text = "Players";
+            this.xtraTabPage6.Size = new System.Drawing.Size(898, 434);
+            this.xtraTabPage6.Text = "玩家";
             // 
             // labelControl69
             // 
-            this.labelControl69.Location = new System.Drawing.Point(18, 202);
+            this.labelControl69.Location = new System.Drawing.Point(54, 218);
             this.labelControl69.Name = "labelControl69";
-            this.labelControl69.Size = new System.Drawing.Size(93, 13);
+            this.labelControl69.Size = new System.Drawing.Size(76, 14);
             this.labelControl69.TabIndex = 126;
-            this.labelControl69.Text = "Auto Revive Delay:";
+            this.labelControl69.Text = "自动复活延迟:";
             // 
             // AutoReviveDelayEdit
             // 
             this.AutoReviveDelayEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.AutoReviveDelayEdit.Location = new System.Drawing.Point(117, 199);
+            this.AutoReviveDelayEdit.Location = new System.Drawing.Point(136, 214);
             this.AutoReviveDelayEdit.MenuManager = this.ribbon;
             this.AutoReviveDelayEdit.Name = "AutoReviveDelayEdit";
-            // 
-            // 
-            // 
             this.AutoReviveDelayEdit.Properties.AllowEditDays = false;
             this.AutoReviveDelayEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.AutoReviveDelayEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.AutoReviveDelayEdit.Size = new System.Drawing.Size(117, 20);
             this.AutoReviveDelayEdit.TabIndex = 125;
             // 
             // PvPCurseRateEdit
             // 
-            this.PvPCurseRateEdit.Location = new System.Drawing.Point(429, 148);
+            this.PvPCurseRateEdit.Location = new System.Drawing.Point(500, 159);
             this.PvPCurseRateEdit.MenuManager = this.ribbon;
             this.PvPCurseRateEdit.Name = "PvPCurseRateEdit";
-            // 
-            // 
-            // 
             this.PvPCurseRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.PvPCurseRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.PvPCurseRateEdit.Properties.Mask.EditMask = "n0";
             this.PvPCurseRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.PvPCurseRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.PvPCurseRateEdit.Size = new System.Drawing.Size(117, 20);
             this.PvPCurseRateEdit.TabIndex = 124;
             // 
             // labelControl83
             // 
-            this.labelControl83.Location = new System.Drawing.Point(344, 151);
+            this.labelControl83.Location = new System.Drawing.Point(434, 163);
             this.labelControl83.Name = "labelControl83";
-            this.labelControl83.Size = new System.Drawing.Size(79, 13);
+            this.labelControl83.Size = new System.Drawing.Size(60, 14);
             this.labelControl83.TabIndex = 123;
-            this.labelControl83.Text = "PvP Curse Rate:";
+            this.labelControl83.Text = "PvP诅咒率:";
             // 
             // labelControl84
             // 
-            this.labelControl84.Location = new System.Drawing.Point(326, 125);
+            this.labelControl84.Location = new System.Drawing.Point(422, 135);
             this.labelControl84.Name = "labelControl84";
-            this.labelControl84.Size = new System.Drawing.Size(97, 13);
+            this.labelControl84.Size = new System.Drawing.Size(72, 14);
             this.labelControl84.TabIndex = 122;
-            this.labelControl84.Text = "PvP Curse Duration:";
+            this.labelControl84.Text = "PvP诅咒持续:";
             // 
             // PvPCurseDurationEdit
             // 
             this.PvPCurseDurationEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.PvPCurseDurationEdit.Location = new System.Drawing.Point(429, 122);
+            this.PvPCurseDurationEdit.Location = new System.Drawing.Point(500, 131);
             this.PvPCurseDurationEdit.MenuManager = this.ribbon;
             this.PvPCurseDurationEdit.Name = "PvPCurseDurationEdit";
-            // 
-            // 
-            // 
             this.PvPCurseDurationEdit.Properties.AllowEditDays = false;
             this.PvPCurseDurationEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.PvPCurseDurationEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.PvPCurseDurationEdit.Size = new System.Drawing.Size(117, 20);
             this.PvPCurseDurationEdit.TabIndex = 121;
             // 
             // RedPointEdit
             // 
-            this.RedPointEdit.Location = new System.Drawing.Point(429, 96);
+            this.RedPointEdit.Location = new System.Drawing.Point(500, 103);
             this.RedPointEdit.MenuManager = this.ribbon;
             this.RedPointEdit.Name = "RedPointEdit";
-            // 
-            // 
-            // 
             this.RedPointEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.RedPointEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.RedPointEdit.Properties.Mask.EditMask = "n0";
             this.RedPointEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.RedPointEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.RedPointEdit.Size = new System.Drawing.Size(117, 20);
             this.RedPointEdit.TabIndex = 112;
             // 
             // labelControl77
             // 
-            this.labelControl77.Location = new System.Drawing.Point(373, 99);
+            this.labelControl77.Location = new System.Drawing.Point(442, 107);
             this.labelControl77.Name = "labelControl77";
-            this.labelControl77.Size = new System.Drawing.Size(50, 13);
+            this.labelControl77.Size = new System.Drawing.Size(52, 14);
             this.labelControl77.TabIndex = 111;
-            this.labelControl77.Text = "Red Point:";
+            this.labelControl77.Text = "红名点数:";
             // 
             // labelControl78
             // 
-            this.labelControl78.Location = new System.Drawing.Point(333, 73);
+            this.labelControl78.Location = new System.Drawing.Point(389, 79);
             this.labelControl78.Name = "labelControl78";
-            this.labelControl78.Size = new System.Drawing.Size(90, 13);
+            this.labelControl78.Size = new System.Drawing.Size(105, 14);
             this.labelControl78.TabIndex = 110;
             this.labelControl78.Text = "PK Point Tick Rate:";
             // 
             // PKPointTickRateEdit
             // 
             this.PKPointTickRateEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.PKPointTickRateEdit.Location = new System.Drawing.Point(429, 70);
+            this.PKPointTickRateEdit.Location = new System.Drawing.Point(500, 75);
             this.PKPointTickRateEdit.MenuManager = this.ribbon;
             this.PKPointTickRateEdit.Name = "PKPointTickRateEdit";
-            // 
-            // 
-            // 
             this.PKPointTickRateEdit.Properties.AllowEditDays = false;
             this.PKPointTickRateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.PKPointTickRateEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.PKPointTickRateEdit.Size = new System.Drawing.Size(117, 20);
             this.PKPointTickRateEdit.TabIndex = 109;
             // 
             // PKPointRateEdit
             // 
-            this.PKPointRateEdit.Location = new System.Drawing.Point(429, 44);
+            this.PKPointRateEdit.Location = new System.Drawing.Point(500, 47);
             this.PKPointRateEdit.MenuManager = this.ribbon;
             this.PKPointRateEdit.Name = "PKPointRateEdit";
-            // 
-            // 
-            // 
             this.PKPointRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.PKPointRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.PKPointRateEdit.Properties.Mask.EditMask = "n0";
             this.PKPointRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.PKPointRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.PKPointRateEdit.Size = new System.Drawing.Size(117, 20);
             this.PKPointRateEdit.TabIndex = 108;
             // 
             // labelControl76
             // 
-            this.labelControl76.Location = new System.Drawing.Point(354, 47);
+            this.labelControl76.Location = new System.Drawing.Point(464, 51);
             this.labelControl76.Name = "labelControl76";
-            this.labelControl76.Size = new System.Drawing.Size(69, 13);
+            this.labelControl76.Size = new System.Drawing.Size(30, 14);
             this.labelControl76.TabIndex = 107;
-            this.labelControl76.Text = "PK Point Rate:";
+            this.labelControl76.Text = "PK点:";
             // 
             // labelControl75
             // 
-            this.labelControl75.Location = new System.Drawing.Point(345, 21);
+            this.labelControl75.Location = new System.Drawing.Point(430, 23);
             this.labelControl75.Name = "labelControl75";
-            this.labelControl75.Size = new System.Drawing.Size(78, 13);
+            this.labelControl75.Size = new System.Drawing.Size(64, 14);
             this.labelControl75.TabIndex = 106;
-            this.labelControl75.Text = "Brown Duration:";
+            this.labelControl75.Text = "棕色名持续:";
             // 
             // BrownDurationEdit
             // 
             this.BrownDurationEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.BrownDurationEdit.Location = new System.Drawing.Point(429, 18);
+            this.BrownDurationEdit.Location = new System.Drawing.Point(500, 19);
             this.BrownDurationEdit.MenuManager = this.ribbon;
             this.BrownDurationEdit.Name = "BrownDurationEdit";
-            // 
-            // 
-            // 
             this.BrownDurationEdit.Properties.AllowEditDays = false;
             this.BrownDurationEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.BrownDurationEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.BrownDurationEdit.Size = new System.Drawing.Size(117, 20);
             this.BrownDurationEdit.TabIndex = 105;
             // 
             // labelControl24
             // 
-            this.labelControl24.Location = new System.Drawing.Point(20, 177);
+            this.labelControl24.Location = new System.Drawing.Point(78, 191);
             this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(91, 13);
+            this.labelControl24.Size = new System.Drawing.Size(52, 14);
             this.labelControl24.TabIndex = 83;
-            this.labelControl24.Text = "Allow Observation:";
+            this.labelControl24.Text = "允许观看:";
             // 
             // AllowObservationEdit
             // 
-            this.AllowObservationEdit.Location = new System.Drawing.Point(117, 174);
+            this.AllowObservationEdit.Location = new System.Drawing.Point(136, 187);
             this.AllowObservationEdit.MenuManager = this.ribbon;
             this.AllowObservationEdit.Name = "AllowObservationEdit";
-            // 
-            // 
-            // 
             this.AllowObservationEdit.Properties.Caption = "";
-            this.AllowObservationEdit.Size = new System.Drawing.Size(100, 19);
+            this.AllowObservationEdit.Size = new System.Drawing.Size(117, 19);
             this.AllowObservationEdit.TabIndex = 82;
             // 
             // SkillExpEdit
             // 
-            this.SkillExpEdit.Location = new System.Drawing.Point(117, 148);
+            this.SkillExpEdit.Location = new System.Drawing.Point(136, 159);
             this.SkillExpEdit.MenuManager = this.ribbon;
             this.SkillExpEdit.Name = "SkillExpEdit";
-            // 
-            // 
-            // 
             this.SkillExpEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.SkillExpEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SkillExpEdit.Properties.Mask.EditMask = "n0";
             this.SkillExpEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.SkillExpEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.SkillExpEdit.Size = new System.Drawing.Size(117, 20);
             this.SkillExpEdit.TabIndex = 81;
             // 
             // labelControl53
             // 
-            this.labelControl53.Location = new System.Drawing.Point(69, 151);
+            this.labelControl53.Location = new System.Drawing.Point(78, 163);
             this.labelControl53.Name = "labelControl53";
-            this.labelControl53.Size = new System.Drawing.Size(42, 13);
+            this.labelControl53.Size = new System.Drawing.Size(52, 14);
             this.labelControl53.TabIndex = 80;
-            this.labelControl53.Text = "Skill Exp:";
+            this.labelControl53.Text = "技能经验:";
             // 
             // DayCycleCountEdit
             // 
-            this.DayCycleCountEdit.Location = new System.Drawing.Point(117, 122);
+            this.DayCycleCountEdit.Location = new System.Drawing.Point(136, 131);
             this.DayCycleCountEdit.MenuManager = this.ribbon;
             this.DayCycleCountEdit.Name = "DayCycleCountEdit";
-            // 
-            // 
-            // 
             this.DayCycleCountEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.DayCycleCountEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.DayCycleCountEdit.Properties.Mask.EditMask = "n0";
             this.DayCycleCountEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.DayCycleCountEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.DayCycleCountEdit.Size = new System.Drawing.Size(117, 20);
             this.DayCycleCountEdit.TabIndex = 79;
             // 
             // labelControl52
             // 
-            this.labelControl52.Location = new System.Drawing.Point(27, 125);
+            this.labelControl52.Location = new System.Drawing.Point(66, 135);
             this.labelControl52.Name = "labelControl52";
-            this.labelControl52.Size = new System.Drawing.Size(84, 13);
+            this.labelControl52.Size = new System.Drawing.Size(64, 14);
             this.labelControl52.TabIndex = 78;
-            this.labelControl52.Text = "Day Cycle Count:";
+            this.labelControl52.Text = "天循环计数:";
             // 
             // MaxLevelEdit
             // 
-            this.MaxLevelEdit.Location = new System.Drawing.Point(117, 96);
+            this.MaxLevelEdit.Location = new System.Drawing.Point(136, 103);
             this.MaxLevelEdit.MenuManager = this.ribbon;
             this.MaxLevelEdit.Name = "MaxLevelEdit";
-            // 
-            // 
-            // 
             this.MaxLevelEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MaxLevelEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.MaxLevelEdit.Properties.Mask.EditMask = "n0";
             this.MaxLevelEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaxLevelEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.MaxLevelEdit.Size = new System.Drawing.Size(117, 20);
             this.MaxLevelEdit.TabIndex = 77;
             // 
             // labelControl46
             // 
-            this.labelControl46.Location = new System.Drawing.Point(59, 99);
+            this.labelControl46.Location = new System.Drawing.Point(42, 107);
             this.labelControl46.Name = "labelControl46";
-            this.labelControl46.Size = new System.Drawing.Size(52, 13);
+            this.labelControl46.Size = new System.Drawing.Size(88, 14);
             this.labelControl46.TabIndex = 76;
-            this.labelControl46.Text = "Max Level:";
+            this.labelControl46.Text = "服务器最大等级:";
             // 
             // labelControl45
             // 
-            this.labelControl45.Location = new System.Drawing.Point(48, 73);
+            this.labelControl45.Location = new System.Drawing.Point(78, 79);
             this.labelControl45.Name = "labelControl45";
-            this.labelControl45.Size = new System.Drawing.Size(63, 13);
+            this.labelControl45.Size = new System.Drawing.Size(52, 14);
             this.labelControl45.TabIndex = 75;
-            this.labelControl45.Text = "Global Delay:";
+            this.labelControl45.Text = "全局延迟:";
             // 
             // GlobalDelayEdit
             // 
             this.GlobalDelayEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.GlobalDelayEdit.Location = new System.Drawing.Point(117, 70);
+            this.GlobalDelayEdit.Location = new System.Drawing.Point(136, 75);
             this.GlobalDelayEdit.MenuManager = this.ribbon;
             this.GlobalDelayEdit.Name = "GlobalDelayEdit";
-            // 
-            // 
-            // 
             this.GlobalDelayEdit.Properties.AllowEditDays = false;
             this.GlobalDelayEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.GlobalDelayEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.GlobalDelayEdit.Size = new System.Drawing.Size(117, 20);
             this.GlobalDelayEdit.TabIndex = 74;
             // 
             // labelControl44
             // 
-            this.labelControl44.Location = new System.Drawing.Point(49, 47);
+            this.labelControl44.Location = new System.Drawing.Point(78, 51);
             this.labelControl44.Name = "labelControl44";
-            this.labelControl44.Size = new System.Drawing.Size(62, 13);
+            this.labelControl44.Size = new System.Drawing.Size(52, 14);
             this.labelControl44.TabIndex = 73;
-            this.labelControl44.Text = "Shout Delay:";
+            this.labelControl44.Text = "喊话延迟:";
             // 
             // ShoutDelayEdit
             // 
             this.ShoutDelayEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.ShoutDelayEdit.Location = new System.Drawing.Point(117, 44);
+            this.ShoutDelayEdit.Location = new System.Drawing.Point(136, 47);
             this.ShoutDelayEdit.MenuManager = this.ribbon;
             this.ShoutDelayEdit.Name = "ShoutDelayEdit";
-            // 
-            // 
-            // 
             this.ShoutDelayEdit.Properties.AllowEditDays = false;
             this.ShoutDelayEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.ShoutDelayEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.ShoutDelayEdit.Size = new System.Drawing.Size(117, 20);
             this.ShoutDelayEdit.TabIndex = 72;
             // 
             // MaxViewRangeEdit
             // 
-            this.MaxViewRangeEdit.Location = new System.Drawing.Point(117, 18);
+            this.MaxViewRangeEdit.Location = new System.Drawing.Point(136, 19);
             this.MaxViewRangeEdit.MenuManager = this.ribbon;
             this.MaxViewRangeEdit.Name = "MaxViewRangeEdit";
-            // 
-            // 
-            // 
             this.MaxViewRangeEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MaxViewRangeEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.MaxViewRangeEdit.Properties.Mask.EditMask = "n0";
             this.MaxViewRangeEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaxViewRangeEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.MaxViewRangeEdit.Size = new System.Drawing.Size(117, 20);
             this.MaxViewRangeEdit.TabIndex = 35;
             // 
             // labelControl23
             // 
-            this.labelControl23.Location = new System.Drawing.Point(28, 21);
+            this.labelControl23.Location = new System.Drawing.Point(54, 23);
             this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(83, 13);
+            this.labelControl23.Size = new System.Drawing.Size(76, 14);
             this.labelControl23.TabIndex = 34;
-            this.labelControl23.Text = "Max View Range:";
+            this.labelControl23.Text = "最大视线范围:";
             // 
             // xtraTabPage7
             // 
@@ -2052,19 +1880,15 @@
             this.xtraTabPage7.Controls.Add(this.HarvestDurationEdit);
             this.xtraTabPage7.Controls.Add(this.labelControl47);
             this.xtraTabPage7.Controls.Add(this.DeadDurationEdit);
-            this.xtraTabPage7.Enabled = true;
             this.xtraTabPage7.Name = "xtraTabPage7";
-            this.xtraTabPage7.Size = new System.Drawing.Size(769, 396);
-            this.xtraTabPage7.Text = "Monsters";
+            this.xtraTabPage7.Size = new System.Drawing.Size(898, 434);
+            this.xtraTabPage7.Text = "怪物";
             // 
             // LairRegionIndexEdit
             // 
-            this.LairRegionIndexEdit.Location = new System.Drawing.Point(142, 96);
+            this.LairRegionIndexEdit.Location = new System.Drawing.Point(166, 103);
             this.LairRegionIndexEdit.MenuManager = this.ribbon;
             this.LairRegionIndexEdit.Name = "LairRegionIndexEdit";
-            // 
-            // 
-            // 
             this.LairRegionIndexEdit.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup;
             this.LairRegionIndexEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -2075,25 +1899,22 @@
             this.LairRegionIndexEdit.Properties.DisplayMember = "ServerDescription";
             this.LairRegionIndexEdit.Properties.NullText = "[Region is null]";
             this.LairRegionIndexEdit.Properties.ValueMember = "Index";
-            this.LairRegionIndexEdit.Size = new System.Drawing.Size(174, 20);
+            this.LairRegionIndexEdit.Size = new System.Drawing.Size(203, 20);
             this.LairRegionIndexEdit.TabIndex = 125;
             // 
             // labelControl82
             // 
-            this.labelControl82.Location = new System.Drawing.Point(79, 99);
+            this.labelControl82.Location = new System.Drawing.Point(92, 107);
             this.labelControl82.Name = "labelControl82";
-            this.labelControl82.Size = new System.Drawing.Size(57, 13);
+            this.labelControl82.Size = new System.Drawing.Size(52, 14);
             this.labelControl82.TabIndex = 124;
-            this.labelControl82.Text = "Lair Region:";
+            this.labelControl82.Text = "巢穴地区:";
             // 
             // MysteryShipRegionIndexEdit
             // 
-            this.MysteryShipRegionIndexEdit.Location = new System.Drawing.Point(142, 70);
+            this.MysteryShipRegionIndexEdit.Location = new System.Drawing.Point(166, 75);
             this.MysteryShipRegionIndexEdit.MenuManager = this.ribbon;
             this.MysteryShipRegionIndexEdit.Name = "MysteryShipRegionIndexEdit";
-            // 
-            // 
-            // 
             this.MysteryShipRegionIndexEdit.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup;
             this.MysteryShipRegionIndexEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -2104,61 +1925,57 @@
             this.MysteryShipRegionIndexEdit.Properties.DisplayMember = "ServerDescription";
             this.MysteryShipRegionIndexEdit.Properties.NullText = "[Region is null]";
             this.MysteryShipRegionIndexEdit.Properties.ValueMember = "Index";
-            this.MysteryShipRegionIndexEdit.Size = new System.Drawing.Size(174, 20);
+            this.MysteryShipRegionIndexEdit.Size = new System.Drawing.Size(203, 20);
             this.MysteryShipRegionIndexEdit.TabIndex = 123;
             // 
             // labelControl89
             // 
-            this.labelControl89.Location = new System.Drawing.Point(34, 73);
+            this.labelControl89.Location = new System.Drawing.Point(80, 79);
             this.labelControl89.Name = "labelControl89";
-            this.labelControl89.Size = new System.Drawing.Size(102, 13);
+            this.labelControl89.Size = new System.Drawing.Size(64, 14);
             this.labelControl89.TabIndex = 117;
-            this.labelControl89.Text = "Mystery Ship Region:";
+            this.labelControl89.Text = "幽灵船地区:";
             // 
             // labelControl74
             // 
-            this.labelControl74.Location = new System.Drawing.Point(50, 47);
+            this.labelControl74.Location = new System.Drawing.Point(68, 51);
             this.labelControl74.Name = "labelControl74";
-            this.labelControl74.Size = new System.Drawing.Size(86, 13);
+            this.labelControl74.Size = new System.Drawing.Size(76, 14);
             this.labelControl74.TabIndex = 104;
-            this.labelControl74.Text = "Harvest Duration:";
+            this.labelControl74.Text = "掉落消失时间:";
             // 
             // HarvestDurationEdit
             // 
             this.HarvestDurationEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.HarvestDurationEdit.Location = new System.Drawing.Point(142, 44);
+            this.HarvestDurationEdit.Location = new System.Drawing.Point(166, 47);
             this.HarvestDurationEdit.MenuManager = this.ribbon;
             this.HarvestDurationEdit.Name = "HarvestDurationEdit";
-            // 
-            // 
-            // 
             this.HarvestDurationEdit.Properties.AllowEditDays = false;
             this.HarvestDurationEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.HarvestDurationEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.HarvestDurationEdit.Size = new System.Drawing.Size(117, 20);
             this.HarvestDurationEdit.TabIndex = 103;
             // 
             // labelControl47
             // 
-            this.labelControl47.Location = new System.Drawing.Point(63, 21);
+            this.labelControl47.Location = new System.Drawing.Point(92, 23);
             this.labelControl47.Name = "labelControl47";
-            this.labelControl47.Size = new System.Drawing.Size(73, 13);
+            this.labelControl47.Size = new System.Drawing.Size(52, 14);
             this.labelControl47.TabIndex = 75;
-            this.labelControl47.Text = "Dead Duration:";
+            this.labelControl47.Text = "死亡持续:";
             // 
             // DeadDurationEdit
             // 
             this.DeadDurationEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.DeadDurationEdit.Location = new System.Drawing.Point(142, 18);
+            this.DeadDurationEdit.Location = new System.Drawing.Point(166, 19);
             this.DeadDurationEdit.MenuManager = this.ribbon;
             this.DeadDurationEdit.Name = "DeadDurationEdit";
-            // 
-            // 
-            // 
             this.DeadDurationEdit.Properties.AllowEditDays = false;
             this.DeadDurationEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DeadDurationEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.DeadDurationEdit.Size = new System.Drawing.Size(117, 20);
             this.DeadDurationEdit.TabIndex = 74;
             // 
             // xtraTabPage8
@@ -2187,285 +2004,260 @@
             this.xtraTabPage8.Controls.Add(this.labelControl49);
             this.xtraTabPage8.Controls.Add(this.labelControl48);
             this.xtraTabPage8.Controls.Add(this.DropDurationEdit);
-            this.xtraTabPage8.Enabled = true;
             this.xtraTabPage8.Name = "xtraTabPage8";
-            this.xtraTabPage8.Size = new System.Drawing.Size(769, 396);
-            this.xtraTabPage8.Text = "Items";
+            this.xtraTabPage8.Size = new System.Drawing.Size(898, 434);
+            this.xtraTabPage8.Text = "物品";
             // 
             // StrengthLossRateEdit
             // 
-            this.StrengthLossRateEdit.Location = new System.Drawing.Point(342, 205);
+            this.StrengthLossRateEdit.Location = new System.Drawing.Point(399, 221);
             this.StrengthLossRateEdit.MenuManager = this.ribbon;
             this.StrengthLossRateEdit.Name = "StrengthLossRateEdit";
-            // 
-            // 
-            // 
             this.StrengthLossRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.StrengthLossRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.StrengthLossRateEdit.Properties.Mask.EditMask = "n0";
             this.StrengthLossRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.StrengthLossRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.StrengthLossRateEdit.Size = new System.Drawing.Size(117, 20);
             this.StrengthLossRateEdit.TabIndex = 100;
             // 
             // labelControl64
             // 
-            this.labelControl64.Location = new System.Drawing.Point(240, 208);
+            this.labelControl64.Location = new System.Drawing.Point(329, 224);
             this.labelControl64.Name = "labelControl64";
-            this.labelControl64.Size = new System.Drawing.Size(96, 13);
+            this.labelControl64.Size = new System.Drawing.Size(64, 14);
             this.labelControl64.TabIndex = 99;
-            this.labelControl64.Text = "Strength Loss Rate:";
+            this.labelControl64.Text = "强度损失率:";
             // 
             // StrengthAddRateEdit
             // 
-            this.StrengthAddRateEdit.Location = new System.Drawing.Point(342, 179);
+            this.StrengthAddRateEdit.Location = new System.Drawing.Point(399, 193);
             this.StrengthAddRateEdit.MenuManager = this.ribbon;
             this.StrengthAddRateEdit.Name = "StrengthAddRateEdit";
-            // 
-            // 
-            // 
             this.StrengthAddRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.StrengthAddRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.StrengthAddRateEdit.Properties.Mask.EditMask = "n0";
             this.StrengthAddRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.StrengthAddRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.StrengthAddRateEdit.Size = new System.Drawing.Size(117, 20);
             this.StrengthAddRateEdit.TabIndex = 98;
             // 
             // labelControl65
             // 
-            this.labelControl65.Location = new System.Drawing.Point(242, 182);
+            this.labelControl65.Location = new System.Drawing.Point(329, 196);
             this.labelControl65.Name = "labelControl65";
-            this.labelControl65.Size = new System.Drawing.Size(94, 13);
+            this.labelControl65.Size = new System.Drawing.Size(64, 14);
             this.labelControl65.TabIndex = 97;
-            this.labelControl65.Text = "Strength Add Rate:";
+            this.labelControl65.Text = "强度增加率:";
             // 
             // MaxStrengthEdit
             // 
-            this.MaxStrengthEdit.Location = new System.Drawing.Point(342, 153);
+            this.MaxStrengthEdit.Location = new System.Drawing.Point(399, 165);
             this.MaxStrengthEdit.MenuManager = this.ribbon;
             this.MaxStrengthEdit.Name = "MaxStrengthEdit";
-            // 
-            // 
-            // 
             this.MaxStrengthEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MaxStrengthEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.MaxStrengthEdit.Properties.Mask.EditMask = "n0";
             this.MaxStrengthEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaxStrengthEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.MaxStrengthEdit.Size = new System.Drawing.Size(117, 20);
             this.MaxStrengthEdit.TabIndex = 96;
             // 
             // labelControl66
             // 
-            this.labelControl66.Location = new System.Drawing.Point(267, 156);
+            this.labelControl66.Location = new System.Drawing.Point(341, 168);
             this.labelControl66.Name = "labelControl66";
-            this.labelControl66.Size = new System.Drawing.Size(69, 13);
+            this.labelControl66.Size = new System.Drawing.Size(52, 14);
             this.labelControl66.TabIndex = 95;
-            this.labelControl66.Text = "Max Strength:";
+            this.labelControl66.Text = "最大强度:";
             // 
             // CurseRateEdit
             // 
-            this.CurseRateEdit.Location = new System.Drawing.Point(121, 231);
+            this.CurseRateEdit.Location = new System.Drawing.Point(141, 249);
             this.CurseRateEdit.MenuManager = this.ribbon;
             this.CurseRateEdit.Name = "CurseRateEdit";
-            // 
-            // 
-            // 
             this.CurseRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.CurseRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.CurseRateEdit.Properties.Mask.EditMask = "n0";
             this.CurseRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.CurseRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.CurseRateEdit.Size = new System.Drawing.Size(117, 20);
             this.CurseRateEdit.TabIndex = 94;
             // 
             // labelControl63
             // 
-            this.labelControl63.Location = new System.Drawing.Point(57, 234);
+            this.labelControl63.Location = new System.Drawing.Point(95, 252);
             this.labelControl63.Name = "labelControl63";
-            this.labelControl63.Size = new System.Drawing.Size(58, 13);
+            this.labelControl63.Size = new System.Drawing.Size(40, 14);
             this.labelControl63.TabIndex = 93;
-            this.labelControl63.Text = "Curse Rate:";
+            this.labelControl63.Text = "诅咒率:";
             // 
             // MaxCurseEdit
             // 
-            this.MaxCurseEdit.Location = new System.Drawing.Point(121, 205);
+            this.MaxCurseEdit.Location = new System.Drawing.Point(141, 221);
             this.MaxCurseEdit.MenuManager = this.ribbon;
             this.MaxCurseEdit.Name = "MaxCurseEdit";
-            // 
-            // 
-            // 
             this.MaxCurseEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MaxCurseEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.MaxCurseEdit.Properties.Mask.EditMask = "n0";
             this.MaxCurseEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaxCurseEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.MaxCurseEdit.Size = new System.Drawing.Size(117, 20);
             this.MaxCurseEdit.TabIndex = 92;
             // 
             // labelControl62
             // 
-            this.labelControl62.Location = new System.Drawing.Point(60, 208);
+            this.labelControl62.Location = new System.Drawing.Point(83, 224);
             this.labelControl62.Name = "labelControl62";
-            this.labelControl62.Size = new System.Drawing.Size(55, 13);
+            this.labelControl62.Size = new System.Drawing.Size(52, 14);
             this.labelControl62.TabIndex = 91;
-            this.labelControl62.Text = "Max Curse:";
+            this.labelControl62.Text = "最大诅咒:";
             // 
             // LuckRateEdit
             // 
-            this.LuckRateEdit.Location = new System.Drawing.Point(121, 179);
+            this.LuckRateEdit.Location = new System.Drawing.Point(141, 193);
             this.LuckRateEdit.MenuManager = this.ribbon;
             this.LuckRateEdit.Name = "LuckRateEdit";
-            // 
-            // 
-            // 
             this.LuckRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.LuckRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.LuckRateEdit.Properties.Mask.EditMask = "n0";
             this.LuckRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.LuckRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.LuckRateEdit.Size = new System.Drawing.Size(117, 20);
             this.LuckRateEdit.TabIndex = 90;
             // 
             // labelControl61
             // 
-            this.labelControl61.Location = new System.Drawing.Point(64, 182);
+            this.labelControl61.Location = new System.Drawing.Point(95, 196);
             this.labelControl61.Name = "labelControl61";
-            this.labelControl61.Size = new System.Drawing.Size(51, 13);
+            this.labelControl61.Size = new System.Drawing.Size(40, 14);
             this.labelControl61.TabIndex = 89;
-            this.labelControl61.Text = "Luck Rate:";
+            this.labelControl61.Text = "幸运率:";
             // 
             // MaxLuckEdit
             // 
-            this.MaxLuckEdit.Location = new System.Drawing.Point(121, 153);
+            this.MaxLuckEdit.Location = new System.Drawing.Point(141, 165);
             this.MaxLuckEdit.MenuManager = this.ribbon;
             this.MaxLuckEdit.Name = "MaxLuckEdit";
-            // 
-            // 
-            // 
             this.MaxLuckEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.MaxLuckEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.MaxLuckEdit.Properties.Mask.EditMask = "n0";
             this.MaxLuckEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.MaxLuckEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.MaxLuckEdit.Size = new System.Drawing.Size(117, 20);
             this.MaxLuckEdit.TabIndex = 88;
             // 
             // labelControl60
             // 
-            this.labelControl60.Location = new System.Drawing.Point(67, 156);
+            this.labelControl60.Location = new System.Drawing.Point(83, 168);
             this.labelControl60.Name = "labelControl60";
-            this.labelControl60.Size = new System.Drawing.Size(48, 13);
+            this.labelControl60.Size = new System.Drawing.Size(52, 14);
             this.labelControl60.TabIndex = 87;
-            this.labelControl60.Text = "Max Luck:";
+            this.labelControl60.Text = "最大幸运:";
             // 
             // labelControl59
             // 
-            this.labelControl59.Location = new System.Drawing.Point(14, 130);
+            this.labelControl59.Location = new System.Drawing.Point(83, 140);
             this.labelControl59.Name = "labelControl59";
-            this.labelControl59.Size = new System.Drawing.Size(101, 13);
+            this.labelControl59.Size = new System.Drawing.Size(52, 14);
             this.labelControl59.TabIndex = 86;
-            this.labelControl59.Text = "Special Repair Delay:";
+            this.labelControl59.Text = "特修延迟:";
             // 
             // SpecialRepairDelayEdit
             // 
             this.SpecialRepairDelayEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.SpecialRepairDelayEdit.Location = new System.Drawing.Point(121, 127);
+            this.SpecialRepairDelayEdit.Location = new System.Drawing.Point(141, 137);
             this.SpecialRepairDelayEdit.MenuManager = this.ribbon;
             this.SpecialRepairDelayEdit.Name = "SpecialRepairDelayEdit";
-            // 
-            // 
-            // 
             this.SpecialRepairDelayEdit.Properties.AllowEditDays = false;
             this.SpecialRepairDelayEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.SpecialRepairDelayEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.SpecialRepairDelayEdit.Size = new System.Drawing.Size(117, 20);
             this.SpecialRepairDelayEdit.TabIndex = 85;
             // 
             // TorchRateEdit
             // 
-            this.TorchRateEdit.Location = new System.Drawing.Point(121, 101);
+            this.TorchRateEdit.Location = new System.Drawing.Point(141, 109);
             this.TorchRateEdit.MenuManager = this.ribbon;
             this.TorchRateEdit.Name = "TorchRateEdit";
-            // 
-            // 
-            // 
             this.TorchRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.TorchRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.TorchRateEdit.Properties.Mask.EditMask = "n0";
             this.TorchRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.TorchRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.TorchRateEdit.Size = new System.Drawing.Size(117, 20);
             this.TorchRateEdit.TabIndex = 84;
             // 
             // labelControl54
             // 
-            this.labelControl54.Location = new System.Drawing.Point(58, 104);
+            this.labelControl54.Location = new System.Drawing.Point(83, 112);
             this.labelControl54.Name = "labelControl54";
-            this.labelControl54.Size = new System.Drawing.Size(57, 13);
+            this.labelControl54.Size = new System.Drawing.Size(52, 14);
             this.labelControl54.TabIndex = 83;
-            this.labelControl54.Text = "Torch Rate:";
+            this.labelControl54.Text = "火炬几率:";
             // 
             // DropLayersEdit
             // 
-            this.DropLayersEdit.Location = new System.Drawing.Point(121, 75);
+            this.DropLayersEdit.Location = new System.Drawing.Point(141, 81);
             this.DropLayersEdit.MenuManager = this.ribbon;
             this.DropLayersEdit.Name = "DropLayersEdit";
-            // 
-            // 
-            // 
             this.DropLayersEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.DropLayersEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.DropLayersEdit.Properties.Mask.EditMask = "n0";
             this.DropLayersEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.DropLayersEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.DropLayersEdit.Size = new System.Drawing.Size(117, 20);
             this.DropLayersEdit.TabIndex = 81;
             // 
             // labelControl50
             // 
-            this.labelControl50.Location = new System.Drawing.Point(53, 78);
+            this.labelControl50.Location = new System.Drawing.Point(83, 84);
             this.labelControl50.Name = "labelControl50";
-            this.labelControl50.Size = new System.Drawing.Size(62, 13);
+            this.labelControl50.Size = new System.Drawing.Size(52, 14);
             this.labelControl50.TabIndex = 80;
-            this.labelControl50.Text = "Drop Layers:";
+            this.labelControl50.Text = "掉落层数:";
             // 
             // DropDistanceEdit
             // 
-            this.DropDistanceEdit.Location = new System.Drawing.Point(121, 49);
+            this.DropDistanceEdit.Location = new System.Drawing.Point(141, 53);
             this.DropDistanceEdit.MenuManager = this.ribbon;
             this.DropDistanceEdit.Name = "DropDistanceEdit";
-            // 
-            // 
-            // 
             this.DropDistanceEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.DropDistanceEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.DropDistanceEdit.Properties.Mask.EditMask = "n0";
             this.DropDistanceEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.DropDistanceEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.DropDistanceEdit.Size = new System.Drawing.Size(117, 20);
             this.DropDistanceEdit.TabIndex = 79;
             // 
             // labelControl49
             // 
-            this.labelControl49.Location = new System.Drawing.Point(44, 52);
+            this.labelControl49.Location = new System.Drawing.Point(83, 56);
             this.labelControl49.Name = "labelControl49";
-            this.labelControl49.Size = new System.Drawing.Size(71, 13);
+            this.labelControl49.Size = new System.Drawing.Size(52, 14);
             this.labelControl49.TabIndex = 78;
-            this.labelControl49.Text = "Drop Distance:";
+            this.labelControl49.Text = "掉落距离:";
             // 
             // labelControl48
             // 
-            this.labelControl48.Location = new System.Drawing.Point(44, 26);
+            this.labelControl48.Location = new System.Drawing.Point(59, 28);
             this.labelControl48.Name = "labelControl48";
-            this.labelControl48.Size = new System.Drawing.Size(71, 13);
+            this.labelControl48.Size = new System.Drawing.Size(76, 14);
             this.labelControl48.TabIndex = 77;
-            this.labelControl48.Text = "Drop Duration:";
+            this.labelControl48.Text = "丢弃消失时间:";
             // 
             // DropDurationEdit
             // 
             this.DropDurationEdit.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.DropDurationEdit.Location = new System.Drawing.Point(121, 23);
+            this.DropDurationEdit.Location = new System.Drawing.Point(141, 25);
             this.DropDurationEdit.MenuManager = this.ribbon;
             this.DropDurationEdit.Name = "DropDurationEdit";
-            // 
-            // 
-            // 
             this.DropDurationEdit.Properties.AllowEditDays = false;
             this.DropDurationEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DropDurationEdit.Properties.Mask.EditMask = "HH:mm:ss";
+            this.DropDurationEdit.Size = new System.Drawing.Size(117, 20);
             this.DropDurationEdit.TabIndex = 76;
             // 
             // xtraTabPage9
@@ -2480,125 +2272,114 @@
             this.xtraTabPage9.Controls.Add(this.labelControl56);
             this.xtraTabPage9.Controls.Add(this.ExperienceRateEdit);
             this.xtraTabPage9.Controls.Add(this.labelControl55);
-            this.xtraTabPage9.Enabled = true;
             this.xtraTabPage9.Name = "xtraTabPage9";
-            this.xtraTabPage9.Size = new System.Drawing.Size(769, 396);
-            this.xtraTabPage9.Text = "Rates";
+            this.xtraTabPage9.Size = new System.Drawing.Size(898, 434);
+            this.xtraTabPage9.Text = "几率";
             // 
             // CompanionRateEdit
             // 
-            this.CompanionRateEdit.Location = new System.Drawing.Point(108, 125);
+            this.CompanionRateEdit.Location = new System.Drawing.Point(126, 135);
             this.CompanionRateEdit.MenuManager = this.ribbon;
             this.CompanionRateEdit.Name = "CompanionRateEdit";
-            // 
-            // 
-            // 
             this.CompanionRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.CompanionRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.CompanionRateEdit.Properties.Mask.EditMask = "n0";
             this.CompanionRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.CompanionRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.CompanionRateEdit.Size = new System.Drawing.Size(117, 20);
             this.CompanionRateEdit.TabIndex = 89;
             // 
             // labelControl68
             // 
-            this.labelControl68.Location = new System.Drawing.Point(19, 128);
+            this.labelControl68.Location = new System.Drawing.Point(56, 138);
             this.labelControl68.Name = "labelControl68";
-            this.labelControl68.Size = new System.Drawing.Size(83, 13);
+            this.labelControl68.Size = new System.Drawing.Size(64, 14);
             this.labelControl68.TabIndex = 88;
-            this.labelControl68.Text = "Companion Rate:";
+            this.labelControl68.Text = "宠物经验率:";
             // 
             // SkillRateEdit
             // 
-            this.SkillRateEdit.Location = new System.Drawing.Point(108, 99);
+            this.SkillRateEdit.Location = new System.Drawing.Point(126, 107);
             this.SkillRateEdit.MenuManager = this.ribbon;
             this.SkillRateEdit.Name = "SkillRateEdit";
-            // 
-            // 
-            // 
             this.SkillRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.SkillRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SkillRateEdit.Properties.Mask.EditMask = "n0";
             this.SkillRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.SkillRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.SkillRateEdit.Size = new System.Drawing.Size(117, 20);
             this.SkillRateEdit.TabIndex = 87;
             // 
             // labelControl58
             // 
-            this.labelControl58.Location = new System.Drawing.Point(55, 102);
+            this.labelControl58.Location = new System.Drawing.Point(68, 110);
             this.labelControl58.Name = "labelControl58";
-            this.labelControl58.Size = new System.Drawing.Size(47, 13);
+            this.labelControl58.Size = new System.Drawing.Size(52, 14);
             this.labelControl58.TabIndex = 86;
-            this.labelControl58.Text = "Skill Rate:";
+            this.labelControl58.Text = "技能倍率:";
             // 
             // GoldRateEdit
             // 
-            this.GoldRateEdit.Location = new System.Drawing.Point(108, 73);
+            this.GoldRateEdit.Location = new System.Drawing.Point(126, 79);
             this.GoldRateEdit.MenuManager = this.ribbon;
             this.GoldRateEdit.Name = "GoldRateEdit";
-            // 
-            // 
-            // 
             this.GoldRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.GoldRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.GoldRateEdit.Properties.Mask.EditMask = "n0";
             this.GoldRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.GoldRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.GoldRateEdit.Size = new System.Drawing.Size(117, 20);
             this.GoldRateEdit.TabIndex = 85;
             // 
             // labelControl57
             // 
-            this.labelControl57.Location = new System.Drawing.Point(51, 76);
+            this.labelControl57.Location = new System.Drawing.Point(68, 82);
             this.labelControl57.Name = "labelControl57";
-            this.labelControl57.Size = new System.Drawing.Size(51, 13);
+            this.labelControl57.Size = new System.Drawing.Size(52, 14);
             this.labelControl57.TabIndex = 84;
-            this.labelControl57.Text = "Gold Rate:";
+            this.labelControl57.Text = "金币几率:";
             // 
             // DropRateEdit
             // 
-            this.DropRateEdit.Location = new System.Drawing.Point(108, 47);
+            this.DropRateEdit.Location = new System.Drawing.Point(126, 51);
             this.DropRateEdit.MenuManager = this.ribbon;
             this.DropRateEdit.Name = "DropRateEdit";
-            // 
-            // 
-            // 
             this.DropRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.DropRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.DropRateEdit.Properties.Mask.EditMask = "n0";
             this.DropRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.DropRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.DropRateEdit.Size = new System.Drawing.Size(117, 20);
             this.DropRateEdit.TabIndex = 83;
             // 
             // labelControl56
             // 
-            this.labelControl56.Location = new System.Drawing.Point(49, 50);
+            this.labelControl56.Location = new System.Drawing.Point(92, 54);
             this.labelControl56.Name = "labelControl56";
-            this.labelControl56.Size = new System.Drawing.Size(53, 13);
+            this.labelControl56.Size = new System.Drawing.Size(28, 14);
             this.labelControl56.TabIndex = 82;
-            this.labelControl56.Text = "Drop Rate:";
+            this.labelControl56.Text = "爆率:";
             // 
             // ExperienceRateEdit
             // 
-            this.ExperienceRateEdit.Location = new System.Drawing.Point(108, 21);
+            this.ExperienceRateEdit.Location = new System.Drawing.Point(126, 23);
             this.ExperienceRateEdit.MenuManager = this.ribbon;
             this.ExperienceRateEdit.Name = "ExperienceRateEdit";
-            // 
-            // 
-            // 
             this.ExperienceRateEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ExperienceRateEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.ExperienceRateEdit.Properties.Mask.EditMask = "n0";
             this.ExperienceRateEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ExperienceRateEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ExperienceRateEdit.Size = new System.Drawing.Size(117, 20);
             this.ExperienceRateEdit.TabIndex = 81;
             // 
             // labelControl55
             // 
-            this.labelControl55.Location = new System.Drawing.Point(19, 24);
+            this.labelControl55.Location = new System.Drawing.Point(68, 26);
             this.labelControl55.Name = "labelControl55";
-            this.labelControl55.Size = new System.Drawing.Size(83, 13);
+            this.labelControl55.Size = new System.Drawing.Size(52, 14);
             this.labelControl55.TabIndex = 80;
-            this.labelControl55.Text = "Experience Rate:";
+            this.labelControl55.Text = "经验倍率:";
             // 
             // OpenDialog
             // 
@@ -2611,9 +2392,9 @@
             // 
             // ConfigView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 567);
+            this.ClientSize = new System.Drawing.Size(904, 611);
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.ribbon);
             this.Name = "ConfigView";
@@ -2623,6 +2404,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
+            this.xtraTabPage1.ResumeLayout(false);
+            this.xtraTabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PacketBanTimeEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPacketEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserCountPortEdit.Properties)).EndInit();
@@ -2630,6 +2413,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.TimeOutEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PortEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IPAddressEdit.Properties)).EndInit();
+            this.xtraTabPage2.ResumeLayout(false);
+            this.xtraTabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllowRequestActivationEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllowWebActivationEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllowManualActivationEdit.Properties)).EndInit();
@@ -2648,6 +2433,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.AllowLoginEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllowChangePasswordEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllowNewAccountEdit.Properties)).EndInit();
+            this.xtraTabPage3.ResumeLayout(false);
+            this.xtraTabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RabbitEventEndEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReleaseDateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClientPathEdit.Properties)).EndInit();
@@ -2656,6 +2443,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DBSaveDelayEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VersionPathEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckVersionEdit.Properties)).EndInit();
+            this.xtraTabPage4.ResumeLayout(false);
+            this.xtraTabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MailDisplayNameEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MailFromEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MailPasswordEdit.Properties)).EndInit();
@@ -2663,6 +2452,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.MailUseSSLEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MailPortEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MailServerEdit.Properties)).EndInit();
+            this.xtraTabPage5.ResumeLayout(false);
+            this.xtraTabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllowBuyGameGoldEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProcessGameGoldEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReceiverEMailEdit.Properties)).EndInit();
@@ -2677,6 +2468,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ActivationSuccessLinkEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WebCommandLinkEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WebPrefixEdit.Properties)).EndInit();
+            this.xtraTabPage6.ResumeLayout(false);
+            this.xtraTabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AutoReviveDelayEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PvPCurseRateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PvPCurseDurationEdit.Properties)).EndInit();
@@ -2691,10 +2484,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.GlobalDelayEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShoutDelayEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxViewRangeEdit.Properties)).EndInit();
+            this.xtraTabPage7.ResumeLayout(false);
+            this.xtraTabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LairRegionIndexEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MysteryShipRegionIndexEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HarvestDurationEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeadDurationEdit.Properties)).EndInit();
+            this.xtraTabPage8.ResumeLayout(false);
+            this.xtraTabPage8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StrengthLossRateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StrengthAddRateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxStrengthEdit.Properties)).EndInit();
@@ -2707,6 +2504,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DropLayersEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DropDistanceEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DropDurationEdit.Properties)).EndInit();
+            this.xtraTabPage9.ResumeLayout(false);
+            this.xtraTabPage9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CompanionRateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillRateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GoldRateEdit.Properties)).EndInit();

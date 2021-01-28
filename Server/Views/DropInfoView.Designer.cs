@@ -62,14 +62,14 @@
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(706, 143);
+            this.ribbon.Size = new System.Drawing.Size(824, 148);
             // 
             // SavingButton
             // 
-            this.SavingButton.Caption = "Save Database";
-            this.SavingButton.Glyph = ((System.Drawing.Image)(resources.GetObject("SavingButton.Glyph")));
+            this.SavingButton.Caption = "保存数据";
             this.SavingButton.Id = 1;
-            this.SavingButton.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("SavingButton.LargeGlyph")));
+            this.SavingButton.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SavingButton.ImageOptions.Image")));
+            this.SavingButton.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("SavingButton.ImageOptions.LargeImage")));
             this.SavingButton.LargeWidth = 60;
             this.SavingButton.Name = "SavingButton";
             this.SavingButton.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SavingButton_ItemClick);
@@ -92,14 +92,14 @@
             // DropInfoGridControl
             // 
             this.DropInfoGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DropInfoGridControl.Location = new System.Drawing.Point(0, 143);
+            this.DropInfoGridControl.Location = new System.Drawing.Point(0, 148);
             this.DropInfoGridControl.MainView = this.DropInfoGridView;
             this.DropInfoGridControl.MenuManager = this.ribbon;
             this.DropInfoGridControl.Name = "DropInfoGridControl";
             this.DropInfoGridControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.MonsterLookUpEdit,
             this.ItemLookUpEdit});
-            this.DropInfoGridControl.Size = new System.Drawing.Size(706, 439);
+            this.DropInfoGridControl.Size = new System.Drawing.Size(824, 479);
             this.DropInfoGridControl.TabIndex = 1;
             this.DropInfoGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.DropInfoGridView});
@@ -114,6 +114,7 @@
             this.gridColumn5,
             this.gridColumn6,
             this.gridColumn7});
+            this.DropInfoGridView.DetailHeight = 377;
             this.DropInfoGridView.GridControl = this.DropInfoGridControl;
             this.DropInfoGridView.Name = "DropInfoGridView";
             this.DropInfoGridView.OptionsView.EnableAppearanceEvenRow = true;
@@ -124,13 +125,16 @@
             // 
             // gridColumn1
             // 
+            this.gridColumn1.Caption = "怪物";
             this.gridColumn1.ColumnEdit = this.MonsterLookUpEdit;
             this.gridColumn1.FieldName = "Monster";
+            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
             this.gridColumn1.SortMode = DevExpress.XtraGrid.ColumnSortMode.DisplayText;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 87;
             // 
             // MonsterLookUpEdit
             // 
@@ -151,13 +155,16 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "物品";
             this.gridColumn2.ColumnEdit = this.ItemLookUpEdit;
             this.gridColumn2.FieldName = "Item";
+            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.True;
             this.gridColumn2.SortMode = DevExpress.XtraGrid.ColumnSortMode.DisplayText;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 87;
             // 
             // ItemLookUpEdit
             // 
@@ -177,44 +184,57 @@
             // 
             // gridColumn3
             // 
+            this.gridColumn3.Caption = "几率";
             this.gridColumn3.FieldName = "Chance";
+            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.Width = 87;
             // 
             // gridColumn4
             // 
+            this.gridColumn4.Caption = "数量";
             this.gridColumn4.FieldName = "Amount";
+            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.Width = 87;
             // 
             // gridColumn5
             // 
             this.gridColumn5.FieldName = "DropSet";
+            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
+            this.gridColumn5.Width = 87;
             // 
             // gridColumn6
             // 
+            this.gridColumn6.Caption = "碎片";
             this.gridColumn6.FieldName = "PartOnly";
+            this.gridColumn6.MinWidth = 23;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
+            this.gridColumn6.Width = 87;
             // 
             // gridColumn7
             // 
             this.gridColumn7.FieldName = "EasterEvent";
+            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 6;
+            this.gridColumn7.Width = 87;
             // 
             // DropInfoView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 582);
+            this.ClientSize = new System.Drawing.Size(824, 627);
             this.Controls.Add(this.DropInfoGridControl);
             this.Controls.Add(this.ribbon);
             this.Name = "DropInfoView";

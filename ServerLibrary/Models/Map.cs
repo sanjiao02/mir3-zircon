@@ -97,7 +97,7 @@ namespace Server.Models
 
                 if (!mob.Spawn(this, new Point(info.X, info.Y)))
                 {
-                    SEnvir.Log($"Failed to spawn Guard Map:{Info.Description}, Location: {info.X}, {info.Y}");
+                    SEnvir.Log($"守卫刷新失败 地图:{Info.Description}, 位置: {info.X}, {info.Y}");
                     continue;
                 }
             }
@@ -326,7 +326,7 @@ namespace Server.Models
                     if (Info.Delay >= 1000000)
                     {
                         foreach (SConnection con in SEnvir.Connections)
-                            con.ReceiveChat($"{mob.MonsterInfo.MonsterName} has appeared.", MessageType.System);
+                            con.ReceiveChat($"{mob.MonsterInfo.MonsterName} 已经出现.", MessageType.System);
                     }
                     else
                     {

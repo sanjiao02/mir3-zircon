@@ -23,11 +23,11 @@ namespace Server.Envir
         public static bool WebServerStarted { get; set; }
 
         private static HttpListener WebListener;
-        public const string ActivationCommand = "Activation", ResetCommand = "Reset", DeleteCommand = "Delete",
-            SystemDBSyncCommand = "SystemDBSync";
-        public const string ActivationKey = "ActivationKey", ResetKey = "ResetKey", DeleteKey = "DeleteKey";
+        public const string ActivationCommand = "激活", ResetCommand = "重置", DeleteCommand = "删除",
+            SystemDBSyncCommand = "系统数据库同步";
+        public const string ActivationKey = "激活Key", ResetKey = "重置Key", DeleteKey = "删除Key";
 
-        public const string Completed = "Completed";
+        public const string Completed = "完成";
         public const string Currency = "GBP";
 
         public static Dictionary<decimal, int> GoldTable = new Dictionary<decimal, int>
@@ -94,7 +94,7 @@ namespace Server.Envir
 
                 WebServerStarted = true;
 
-                if (log) SEnvir.Log("Web Server Started.");
+                if (log) SEnvir.Log("Web服务器已开启.");
             }
             catch (Exception ex)
             {
@@ -132,7 +132,7 @@ namespace Server.Envir
             expiredBuyListener?.Stop();
             expiredIPNListener?.Stop();
 
-            if (log) SEnvir.Log("Web Server Stopped.");
+            if (log) SEnvir.Log("Web服务器已停止.");
         }
 
         private static void WebConnection(IAsyncResult result)
@@ -173,21 +173,21 @@ namespace Server.Envir
             {
                 if (!Config.AllowSystemDBSync)
                 {
-                    SEnvir.Log($"Trying sync but not enabled");
+                    SEnvir.Log($"正在尝试同步但未启用");
                     context.Response.StatusCode = 401;
                     return;
                 }
 
                 if (context.Request.HttpMethod != "POST" || !context.Request.HasEntityBody)
                 {
-                    SEnvir.Log($"Trying sync but method is not post or not have body");
+                    SEnvir.Log($"尝试同步但方法不是post或没有主体");
                     context.Response.StatusCode = 401;
                     return;
                 }
 
                 if (context.Request.ContentLength64 > 1024 * 1024 * 10)
                 {
-                    SEnvir.Log($"Trying sync but exceeded SystemDB size");
+                    SEnvir.Log($"尝试同步但超过了SystemDB大小");
                     context.Response.StatusCode = 400;
                     return;
                 }
@@ -195,12 +195,12 @@ namespace Server.Envir
                 var masterPassword = context.Request.QueryString["Key"];
                 if (string.IsNullOrEmpty(masterPassword) || !masterPassword.Equals(Config.SyncKey))
                 {
-                    SEnvir.Log($"Trying sync but key received is not valid");
+                    SEnvir.Log($"尝试同步，但接收到的密钥无效");
                     context.Response.StatusCode = 400;
                     return;
                 }
 
-                SEnvir.Log($"Starting remote syncronization...");
+                SEnvir.Log($"开启远程同步中…….");
 
                 var buffer = new byte[context.Request.ContentLength64];
                 var offset = 0;
@@ -230,7 +230,7 @@ namespace Server.Envir
 
                 context.Response.StatusCode = 200;
 
-                SEnvir.Log($"Syncronization completed...");
+                SEnvir.Log($"同步完成……");
             }
             catch (Exception ex)
             {
@@ -238,7 +238,7 @@ namespace Server.Envir
                 context.Response.ContentType = "text/plain";
                 var message = Encoding.UTF8.GetBytes(ex.ToString());
                 context.Response.OutputStream.Write(message, 0, message.Length);
-                SEnvir.Log("Syncronization exception: " + ex.ToString());
+                SEnvir.Log("同步异常: " + ex.ToString());
             }
             finally
             {
