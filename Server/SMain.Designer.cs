@@ -135,6 +135,7 @@
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
             this.ribbonControl1.Size = new System.Drawing.Size(1315, 148);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
+            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // skinRibbonGalleryBarItem1
             // 
